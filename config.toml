@@ -1,0 +1,20 @@
+title = "Tigo CTM"
+baseurl = "http://tigoctm.com/"
+languageCode = "en-us"
+
+[params]
+  # Meta parameters.
+  language = "en"
+  encoding = "utf-8"
+  keywords = ["Bitcoin", "Cryptocurrency", "ATM", "Vending machine", "BTM", "Bitcoin ATM", "Dash", "Dash ATM"]
+  description = "The fastest and easiest way to own a Cryptocurrency Tellar Machine"
+
+  # Top section of the website.
+  topAnchor = "top"
+  logo = "http://i.imgur.com/49rknH2.png"
+  title = "Tigo CTM"
+  tagline = "The fastest and easiest way to own a Cryptocurrency Tellar Machine"
+
+[blackfriday]
+  hrefTargetBlank = true
+
