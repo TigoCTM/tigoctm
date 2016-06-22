@@ -1,0 +1,42 @@
+.Topbar
+  background-color: white
+  position: absolute
+  top: 0
+  width: 100%
+  z-index: 9999
+
+  +e(content)
+    border-bottom: 1px solid $lightgray
+    display: flex
+    align-items: center
+    height: 70px
+    margin: auto
+    width: $main-layout-size
+
+    .TopbarContent
+      +e(logo)
+        margin-left: $medium-white-space-size
+        margin-right: auto
+
+      +e(menu)
+        height: 100%
+
+        nav
+          margin: 0 $medium-white-space-size
+          height: 100%
+
+          ul
+            display: flex
+            align-items: center
+            height: 100%
+
+            li
+              margin: 0 $medium-white-space-size
+
+              a
+                display: block
+
++media($lg)
+  .Topbar
+    +e(content)
+      width: 100%

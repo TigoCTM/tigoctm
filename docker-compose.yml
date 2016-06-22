@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  app:
+    extends:
+      file: docker-compose-common.yml
+      service: wpk
+    command: gulp server --layout
+    ports:
+      - '3000:3000'
+
+  nginx:
+    extends:
+      file: docker-compose-common.yml
+      service: nginx
+    build: ./compose/nginx/dev

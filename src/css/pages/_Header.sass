@@ -1,0 +1,46 @@
+.Header
+  background-color: white
+  background-image: url(../img/header-image.png)
+  background-position: fixed center
+  background-repeat: no-repeat
+  background-size: 120% auto
+  
+  +e(logo)
+    img
+      margin: auto
+  
+  +e(subtitle)
+    background-image: linear-gradient(-109deg, $default-color 0%, $dark 92%)
+    background-color: $default-color
+    color: white
+    padding: $white-space-size
+    position: relative
+    text-align: center
+    width: 100%
+
+    &:after
+      background-color: lighten($default-color, 10%)
+      bottom: -$small-white-space-size
+      content: ""
+      height: $small-white-space-size
+      left: 0
+      position: absolute
+      width: 100%
+
+    h1
+      font-weight: $font-weight-regular
+      line-height: $font-size-giant
+      margin-bottom: $small-white-space-size
+
+    h4
+      font-weight: $font-weight-light
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: $medium-white-space-size
+      width: 50%
+
++media($lg)
+  .Header
+    +e(subtitle)
+      h4
+        width: 100%

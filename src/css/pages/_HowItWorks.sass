@@ -1,0 +1,91 @@
+.HowItWorks
+  background-color: white
+  
+  +e(info)
+    padding: $medium-white-space-size
+
+  .HowItWorksInfo
+    +e(image)
+      padding: $small-white-space-size
+
+      img
+        margin: auto
+
+    +e(title)
+      padding: $small-white-space-size
+
+      p
+        font-size: $font-size-big
+        line-height: 2rem
+        text-align: center
+
+    +e(graph)
+
+      img
+        margin: auto
+
+  .HowItWorksBlock
+    height: 260px
+    position: relative
+    width: 100%
+
+    +e(bg)
+      background-color: $default-color
+      height: 180px
+      position: absolute
+      top: calc(50% - 90px)
+      width: 100%
+      z-index: 0
+
+      &:after
+        background-color: darken($default-color, 10%)
+        bottom: -$small-white-space-size
+        content: ""
+        height: $small-white-space-size
+        left: 0
+        position: absolute
+        width: 100%
+
+    +e(body)
+      height: 100%
+
+    +e(container)
+      align-items: center
+      display: flex
+      height: 100%
+      position: absolute
+      width: 100%
+      z-index: 1
+
+    +e(content)
+      height: 100%
+
+      p
+        color: white
+        font-size: $font-size-big
+        font-weight: $font-weight-light
+        padding: 0 $medium-white-space-size
+
+    +e(graph)
+      align-items: center
+      background-color: white
+      border-radius: 50%
+      display: flex
+      height: 260px
+      justify-content: center
+      margin: auto
+      position: relative
+      top: $x-small-white-space-size
+      width: 80%
+
+      img
+        margin: auto
+
+    +e(image)
+      position: relative
+      top: $x-small-white-space-size
+
+      img
+        masrgin: auto
+        height: 260px
+        width: auto
