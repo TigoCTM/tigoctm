@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  app:
+    extends:
+      file: docker-compose-common.yml
+      service: wpk
+    command: gulp build
+
+  nginx:
+    extends:
+      file: docker-compose-common.yml
+      service: nginx
+    build: ./compose/nginx/production
+    restart: always

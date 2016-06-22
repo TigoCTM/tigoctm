@@ -1,0 +1,34 @@
+.Information
+  background-image: linear-gradient(-109deg, $default-color 0%, $dark 92%)
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p
+    color: white
+
+  +m(light)
+    background-image: none
+    background-color: white
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p
+      color: $default-color
+
+  +e(info)
+    padding: $medium-white-space-size
+
+    h2
+      padding: $medium-white-space-size
+    
+    p
+      text-align: justify
+      padding: $small-white-space-size 0

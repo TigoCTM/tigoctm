@@ -1,0 +1,39 @@
+.Benefits
+  background-image: linear-gradient(-135deg, $primary-color 0%, $default-color 100%)
+  position: relative
+
+  +e(bg)
+    background-color: transparent
+    background-image: url(../img/about-bg.png)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: 70% auto
+    height: 100%
+    mix-blend-mode: overlay
+    opacity: .3
+    position: absolute
+    width: 100%
+    z-index: 0
+
+  +e(container)
+    height: 100%
+    position: relative
+    z-index: 1
+  
+  +e(content)
+    p,
+    h3
+      color: white
+
+    p
+      padding: $small-white-space-size 0
+
+  +e(info)
+    margin: auto
+    width: 50%
+
+    p
+      text-align: left
+
++media($md)
+  
