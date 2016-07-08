@@ -1,20 +1,23 @@
 title = "Tigo CTM"
-baseurl = "http://isysd.github.io/"
-languageCode = "en-us"
+baseurl = "http://tigoctm.com/"
+publishdir = "public"
+contentdir = "src/hugo/content"
+layoutdir = "src/hugo/layouts"
+staticdir = "src/hugo/static"
+themesdir = "src/hugo/themes"
+languageCode = "en-US"
 
 [params]
   # Meta parameters.
   language = "en"
   encoding = "utf-8"
-  keywords = ["Bitcoin", "Cryptocurrency", "ATM", "Vending machine", "BTM", "Bitcoin ATM", "Dash", "Dash ATM"]
-  description = "The fastest and easiest way to own a Cryptocurrency Tellar Machine"
-
-  # Top section of the website.
-  topAnchor = "top"
-  logo = "http://i.imgur.com/49rknH2.png"
-  title = "Tigo CTM"
-  tagline = "The fastest and easiest way to own a Cryptocurrency Tellar Machine"
+  description = ""
 
 [blackfriday]
   hrefTargetBlank = true
 
+[[menu.main]]
+  name = "Home"
+  weight = 1
+  identifier = "home"
+  url = "/"
