@@ -5,7 +5,7 @@ title = "Information A"
 
 +++
 <div class="Information-subtitle">
-  <h2>This Cutting Edge, International, Explosive Business Opportunity Could be Yours for Far Less than You Imagine</h2>
+##   This Cutting Edge, International, Explosive Business Opportunity Could be Yours for Far Less than You Imagine
 </div>
 <div class="u-row">
   <div class="u-column u-column--hd3">
