@@ -1,5 +1,5 @@
 +++
-date = "2016-06-12T19:40:19Z"
+date = "2016-07-09T19:40:19Z"
 draft = false
 title = "How It Works"
 
@@ -11,7 +11,7 @@ title = "How It Works"
         <div class="HowItWorksInfo-item">
           <div class="HowItWorksInfo-image"><img src="/img/howitworks-1.png" height="200" width="auto"></div>
           <div class="HowItWorksInfo-title">
-            <p>Own a no-hassle cash business</p>
+            <p>Own a no-hassle, all cash business</p>
           </div>
         </div>
       </div>
@@ -19,7 +19,7 @@ title = "How It Works"
         <div class="HowItWorksInfo-item">
           <div class="HowItWorksInfo-image"><img src="/img/howitworks-2.png" height="200" width="auto"></div>
           <div class="HowItWorksInfo-title">
-            <p>Make up to $3000 per month with no work</p>
+            <p>Make up to $3000 per month residual income</p>
           </div>
         </div>
       </div>
