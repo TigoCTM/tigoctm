@@ -1,1 +1,3 @@
-public
+#  Ignores rendered site directory
+
+public/
