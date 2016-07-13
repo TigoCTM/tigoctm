@@ -17,4 +17,4 @@ $ hugo server
 Open a web browser and navigate to: `http://localhost:1313`.
 
 ### Testing Mirror
-Available at [@indieinc 's Github Pages.](https://indieinc.github.io/)
+Available at @indieinc 's [Github Pages.](https://indieinc.github.io/)
