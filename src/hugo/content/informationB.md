@@ -1,17 +1,16 @@
 +++
-date = "2016-06-12T19:40:19Z"
+date = "2016-07-09T19:40:19Z"
 draft = false
 title = "Information B"
 
 +++
-<div class="u-row">
-  <div class="u-column u-column--hd3 u-column--md12">
-    <div class="Information-info"></div>
-  </div>
-  <div class="u-column u-column--hd9 u-column--md12">
-    <div class="Information-info">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lorem leo, malesuada et odio ac, efficitur imperdiet sapien. Quisque lobortis, sem in tincidunt ultricies, erat ante ultricies neque, at egestas turpis dolor eu ex. Proin sed mollis lacus, a finibus odio. Curabitur convallis dapibus mollis. Praesent commodo feugiat tortor eu accumsan. Sed imperdiet lorem sed semper ultrices. Aenean sit amet arcu a urna lobortis tincidunt. Suspendisse vel dapibus nisi. Fusce at ex fermentum, hendrerit nunc sit amet, posuere orci. Sed gravida dictum tincidunt. Maecenas eget tristique purus, eu mollis eros. Proin facilisis metus vel diam cursus, vitae euismod massa mollis. Mauris libero ligula, iaculis congue leo eleifend, consectetur efficitur leo. Suspendisse molestie tellus ac tellus imperdiet vestibulum. Vestibulum ornare ligula quis eros tristique, eu elementum enim consequat.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lorem leo, malesuada et odio ac, efficitur imperdiet sapien. Quisque lobortis, sem in tincidunt ultricies, erat ante ultricies neque, at egestas turpis dolor eu ex. Proin sed mollis lacus, a finibus odio. Curabitur convallis dapibus mollis. Praesent commodo feugiat tortor eu accumsan. Sed imperdiet lorem sed semper ultrices. Aenean sit amet arcu a urna lobortis tincidunt. Suspendisse vel dapibus nisi. Fusce at ex fermentum, hendrerit nunc sit amet, posuere orci. Sed gravida dictum tincidunt. Maecenas eget tristique purus, eu mollis eros. Proin facilisis metus vel diam cursus, vitae euismod massa mollis. Mauris libero ligula, iaculis congue leo eleifend, consectetur efficitur leo. Suspendisse molestie tellus ac tellus imperdiet vestibulum. Vestibulum ornare ligula quis eros tristique, eu elementum enim consequat.</p>
-    </div>
-  </div>
-</div>
+
+- These machines are **already in demand**, and Bitcoin users are screaming for more machines in more locations. There aren’t enough machines to fill the demand.
+
+- **How much demand?** In the few cities these machines are found (not many), transactions range from $20,000 to $300,000 / month. 
+
+- You keep the percentage you choose. **From 5% - 20%.**
+
+- Your job is simply to find a location to place these high demand machines and pick up your profits.
+
+- It’s as **easy as a vending machine**, except with vending machines, your profits rely on high traffic.

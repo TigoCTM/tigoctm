@@ -1,9 +1,14 @@
 +++
-date = "2016-06-12T19:40:19Z"
+date = "2016-07-09T19:40:19Z"
 draft = false
 title = "Contact"
 
 +++
+ <div class="u-column u-column--hd5 u-column--md12">
+    <div class="Information-info">
+        <p>Fill out the form for more information.</p>
+    </div>
+  </div>
 <div class="u-row">
   <div class="u-column u-column--hd7 u-column--md12">
     <form class="u-form theme-form">
@@ -41,9 +46,5 @@ title = "Contact"
       </div>
     </form>
   </div>
-  <div class="u-column u-column--hd5 u-column--md12">
-    <div class="Information-info">
-      <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Duis lorem leo, malesuada et odio ac, efficitur imperdiet sapien. Quisque lobortis, sem in tincidunt ultricies, erat ante ultricies neque, at egestas turpis dolor eu ex.</p>
-    </div>
-  </div>
+ 
 </div>

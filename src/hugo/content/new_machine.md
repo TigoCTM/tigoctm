@@ -4,6 +4,7 @@ draft = false
 title = "Your New Machine"
 
 +++
+
 <div class="u-column u-column--hd4 u-column--md12">
   <div class="Products-item">
     <div class="theme-panel">

@@ -1,18 +1,18 @@
 +++
-date = "2016-06-12T19:40:19Z"
+date = "2016-07-09T19:40:19Z"
 draft = false
 title = "The Business Opportunity"
 
 +++
-<div class="u-column u-column--hd6 u-column--md12">
-  <div class="Information-info">
-    <h3>The Problem</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lorem leo, malesuada et odio ac, efficitur imperdiet sapien. Quisque lobortis, sem in tincidunt ultricies, erat ante ultricies neque, at egestas turpis dolor eu ex. Proin sed mollis lacus, a finibus odio. Curabitur convallis dapibus mollis. Praesent commodo feugiat tortor eu accumsan. Sed imperdiet lorem sed semper ultrices. Aenean sit amet arcu a urna lobortis tincidunt. Suspendisse vel dapibus nisi. Fusce at ex fermentum, hendrerit nunc sit amet, posuere orci. Sed gravida dictum tincidunt. Maecenas eget tristique purus, eu mollis eros. Proin facilisis metus vel diam cursus, vitae euismod massa mollis. Mauris libero ligula, iaculis congue leo eleifend, consectetur efficitur leo. Suspendisse molestie tellus ac tellus imperdiet vestibulum. Vestibulum ornare ligula quis eros tristique, eu elementum enim consequat.</p>
-  </div>
-</div>
-<div class="u-column u-column--hd6 u-column--md12">
-  <div class="Information-info">
-    <h3>The Solution</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lorem leo, malesuada et odio ac, efficitur imperdiet sapien. Quisque lobortis, sem in tincidunt ultricies, erat ante ultricies neque, at egestas turpis dolor eu ex. Proin sed mollis lacus, a finibus odio. Curabitur convallis dapibus mollis. Praesent commodo feugiat tortor eu accumsan. Sed imperdiet lorem sed semper ultrices. Aenean sit amet arcu a urna lobortis tincidunt. Suspendisse vel dapibus nisi. Fusce at ex fermentum, hendrerit nunc sit amet, posuere orci. Sed gravida dictum tincidunt. Maecenas eget tristique purus, eu mollis eros. Proin facilisis metus vel diam cursus, vitae euismod massa mollis. Mauris libero ligula, iaculis congue leo eleifend, consectetur efficitur leo. Suspendisse molestie tellus ac tellus imperdiet vestibulum. Vestibulum ornare ligula quis eros tristique, eu elementum enim consequat.</p>
-  </div>
-</div>
+
+
+###     The Problem
+   Bitcoin and Cryptocurrency are growing an a phenomenal rate. In fact, experts expect the industry will see over 1 billion dollars in investment during 2016. Amazon, Paypal, Ferrari, and many other international firms now accept Bitcoin. What seemed the domain of tech geeks and fringe freedom seekers, its now moving into the mainstream.
+   
+Unfortunately purchasing Cryptocurrency like Bitcoin or Dash privately and conveniently is difficult, and often impossible. Moving crypto back into fiat cash is worse.
+
+It requires complex, expensive, and highly scrutinized wire transfers, tons of paperwork, and more.
+
+Even when possible through bank and wire transfers, using banks eliminates privacy, destroying one of the main reasons cryptocurrency popularity is growing.
+
+**Cryptocurrency Teller Machines (CTMs)** help customers overcome these problems. But until TIGO entered the market, CTM owners have struggled due to technical issues, lack of connections in the field, and misunderstandings of the Cryptocurrency world.
