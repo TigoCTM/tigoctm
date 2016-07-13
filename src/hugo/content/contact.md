@@ -4,6 +4,11 @@ draft = false
 title = "Contact"
 
 +++
+ <div class="u-column u-column--hd5 u-column--md12">
+    <div class="Information-info">
+        <p>Fill out the form for more information.</p>
+    </div>
+  </div>
 <div class="u-row">
   <div class="u-column u-column--hd7 u-column--md12">
     <form class="u-form theme-form">
@@ -41,9 +46,5 @@ title = "Contact"
       </div>
     </form>
   </div>
-  <div class="u-column u-column--hd5 u-column--md12">
-    <div class="Information-info">
-      <p>Fill out the form for more information.</p>
-    </div>
-  </div>
+ 
 </div>
