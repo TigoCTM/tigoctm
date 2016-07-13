@@ -19,6 +19,7 @@
               {{ range where .Data.Pages ".Title" "Header" }}
                 {{ .Content }}
               {{ end }}
+              <a href="#" class="u-btn u-btn-large theme-btn-primary">Get More Information Now</a>
             </div>
           </div>
         </div>
@@ -30,7 +31,7 @@
       <div class="theme-page-content">
         <div class="theme-page-content--small">
           {{ range where .Data.Pages ".Title" "Information A" }}
-            {{ .Content }}
+              {{ .Content }}
           {{ end }}
         </div>
       </div>
@@ -45,10 +46,21 @@
           </div>
           <div class="theme-page-content--small">
             <div class="u-row">
+              <div class="u-column u-column--hd6 u-column--md12">
+                <div class="Information-info">
               {{ .Content }}
+                </div>
+              </div>
+              {{ end }}
+            {{ range where .Data.Pages ".Title" "The Business Opportunity B" }}
+              <div class="u-column u-column--hd6 u-column--md12">
+                <div class="Information-info">
+                {{ .Content }}
+                </div>
+              </div>
+              {{ end }}
             </div>
-          </div>
-        {{ end }}
+          </div>  
       </div>
     </div>
   </div>
@@ -102,14 +114,31 @@
   <div class="theme-page Information Information--light">
     <div class="theme-page-container">
       <div class="theme-page-content">
+        <div class="theme-page-content-title">
+            <p>Existing and Growing Demand</p>
+        </div>
         <div class="theme-page-content--small">
-          {{ range where .Data.Pages ".Title" "Information B" }}
-            {{ .Content }}
-          {{ end }}
+          <div class="u-row">
+             <div class="u-column u-column--hd6 u-column--md12">
+                <div class="Information-info">
+                  {{ range where .Data.Pages ".Title" "Information B" }}
+                    {{ .Content }}
+                  {{ end }}
+                </div>
+              </div>
+              <div class ="u-column u-column--hd6 u-column--md12">
+                <div class="Information-info">
+                    {{ range where .Data.Pages ".Title" "Information B2" }}
+                      {{ .Content }}
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
         </div>
       </div>
     </div>
-  </div>
   <div class="theme-page Products">
     <div class="theme-page-container">
       <div class="theme-page-content">
@@ -151,9 +180,12 @@
     <div class="theme-page-container">
       <div class="theme-page-content">
         <div class="theme-page-content--small">
-          {{ range where .Data.Pages ".Title" "Information C" }}
-            {{ .Content }}
-          {{ end }}
+          <div class="Information-info">
+            {{ range where .Data.Pages ".Title" "Information C" }}
+              {{ .Content }}
+            {{ end }}
+          </div>
+          <a href="#" class="u-btn u-btn-x-large theme-btn-primary">Download FREE Information Pack for More Information</a>
         </div>
       </div>
     </div>
