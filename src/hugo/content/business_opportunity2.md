@@ -5,8 +5,8 @@ title = "The Business Opportunity B"
 
 +++
 
-###  TIGO's Solution
-   **TIGO Cryptocurrency Teller Machines (CTM’s)** eliminate these issues by making Bitcoin and Cryptocurrency transactions as simple as using your bank's ATM.
+###  TigoCTM's Solution
+   **TigoCTM Cryptocurrency Teller Machines (CTM’s)** eliminate these issues by making Bitcoin and Cryptocurrency transactions as simple as using your bank's ATM.
    
  And now for the first time, business owners like you can get in on the ground floor of this amazing all cash, residual income, cutting edge opportunity by owning your own crypto money machine in an industry virtually free from competition. Even if you have no experience or technical skills.
  
@@ -14,4 +14,4 @@ title = "The Business Opportunity B"
  
  Alternatively, clients pay you in Cryptocurrency, and you hand them back fiat currency. You profit in either direction.
  
- TIGO has removed the technical hurdles, built an amazing network within the industry, and has deep knowledge of Bitcoin and Cryptocurrency. And with the TIGO opportunity, you get a back door into this once in a lifetime opportunity.
+ TigoCTM has removed the technical hurdles, built an amazing network within the industry, and has deep knowledge of Bitcoin and Cryptocurrency. And with the TIGO opportunity, you get a back door into this once in a lifetime opportunity.

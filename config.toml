@@ -1,4 +1,4 @@
-title = "Tigo CTM"
+title = "TigoCTM"
 baseurl = "http://tigoctm.com/"
 publishdir = "public"
 contentdir = "src/hugo/content"

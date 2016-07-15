@@ -5,7 +5,7 @@ title = "CTA2"
 
 +++
 <div class="Information-info">
-## For more information about this once in a lifetime opportunity, download (or request) our information pack now
+## For more information about this once in a lifetime opportunity, fill out the form below
 
-<a href="#" class="u-btn u-btn-x-large theme-btn-primary">Download FREE Information Pack for More Information</a>
+<a href="#" class="u-btn u-btn-x-large theme-btn-primary">Fill out the form below for More Information</a>
 </div>

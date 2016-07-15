@@ -17,7 +17,7 @@ title = "Benefits"
 *     Small and easy to place so you don’t have to handle inventory or have storage space of your own.
 *     A great add on to your existing business so you can bring in new traffic and add new revenue with office or retail space you already have.
 *     Free and open software with additional crypto currency support giving your users a full range of options so you have even more potential customers seeking you out.
-*     TIGO CTM is the one stop shop for Cryptocurrency Teller Machines, so regardless of your requirements, you can rest assured we have you covered.
+*     TigoCTM is the one stop shop for Cryptocurrency Teller Machines, so regardless of your requirements, you can rest assured we have you covered.
 *     The highest quality hardware, free and open software and an extended partner network so owning and running your own CTM business is as easy as plug and play.
 
 
