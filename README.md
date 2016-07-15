@@ -1,10 +1,10 @@
-# Tigo CTM
+# TigoCTM
 
 ### Version
 1.1.0
 
 ### Installation
-Tigo CTM requires [Hugo](https://gohugo.io/) to run.
+TigoCTM requires [Hugo](https://gohugo.io/) to run.
 
 ### Usage
 Open your favorite Terminal and run these commands:

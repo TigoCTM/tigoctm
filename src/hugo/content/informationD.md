@@ -16,5 +16,5 @@ title = "Information D"
   </div>
 </div>
 <div class="Information-info">
-  <h2>For more information about this once in a lifetime opportunity, download (or request) our information pack now</h2>
+  <h2>For more information about this once in a lifetime opportunity, fill out the form below</h2>
 </div>

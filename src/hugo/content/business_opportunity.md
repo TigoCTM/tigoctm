@@ -15,4 +15,4 @@ It requires complex, expensive, and highly scrutinized wire transfers, tons of p
 
 Even when possible through bank and wire transfers, using banks eliminates privacy, destroying one of the main reasons cryptocurrency popularity is growing.
 
-**Cryptocurrency Teller Machines (CTMs)** help customers overcome these problems. But until TIGO entered the market, CTM owners have struggled due to technical issues, lack of connections in the field, and misunderstandings of the Cryptocurrency world.
+**Cryptocurrency Teller Machines (CTMs)** help customers overcome these problems. But until TigoCTM entered the market, CTM owners have struggled due to technical issues, lack of connections in the field, and misunderstandings of the Cryptocurrency world.

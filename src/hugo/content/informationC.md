@@ -5,11 +5,12 @@ title = "Information C"
 
 +++
 ##   Recover Your Investment in 3 – 6 Months
- Bitcoin and Cryptocurrency CTMs used to be the domain of technical geeks and were complex to use, run, and understand. But we created TIGO to allow any business owner who wants a ground floor, cash only, revenue-generating business to get started with no knowledge at all.
- 
-In the past, CTM operators have gotten confused about the technological requirements and need for a network of providers. TIGO handles all of that for you. All you need to do is find a location, and we’ll even help with that.
 
-Most of our owners recoup their original investment in 3 - 6 months. After that, these are automatic money machines.
+Bitcoin ATM Machines used to be limited in flexibility and only accessible to technical savvy engineers. They were complex to use, run, and upgrade. But TigoCTM opens the market to alternative cryptocurrencies such as Dash and allows any business owner who wants a ground floor, revenue-generating business to get started with limited cryptocurrency knowledge or tech skills.
  
-## For more information about this once in a lifetime opportunity, download (or request) our information pack now
+In the past, CTM operators have gotten confused about the technological requirements and need for a network of providers. TigoCTM handles all of that for you. All you need to do is find a location, and we’ll even help with that.
+
+Most of our owners recoup their original investment in 3 - 9 months. After that, these are automatic money machines.
+ 
+## For more information about this once in a lifetime opportunity, fill out the form below
 
