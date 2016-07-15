@@ -1064,6 +1064,8 @@ fieldset {
     .theme-page-content--x-small {
       margin: auto;
       width: 800px; }
+  .theme-page-space {
+    padding-top: 100px; }
 
 .theme-panel {
   background-color: white;
@@ -1318,7 +1320,7 @@ fieldset {
 
 .Topbar {
   background-color: white;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 9999; }

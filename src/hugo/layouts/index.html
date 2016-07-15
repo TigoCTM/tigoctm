@@ -37,9 +37,9 @@
       </div>
     </div>
   </div>
-  <div class="theme-page Information Information--light">
+  <div id="About" class="theme-page Information Information--light">
     <div class="theme-page-container">
-      <div class="theme-page-content">
+      <div class="theme-page-content theme-page-space">
         {{ range where .Data.Pages ".Title" "The Business Opportunity" }}
           <div class="theme-page-content-title">
             <p>{{ .Title }}</p>
@@ -64,8 +64,8 @@
       </div>
     </div>
   </div>
-  <div id="Path" class="theme-page Path">
-    <div class="theme-page-container">
+  <div id="HowItWorks" class="theme-page theme-page-space">
+    <div class="theme-page-container Path">
       <div class="theme-page-content">
         <div class="theme-page-content--small">
           <div class="u-row">
@@ -139,13 +139,13 @@
         </div>
       </div>
     </div>
-  <div class="theme-page Products">
+  <div id="Products" class="theme-page Products">
   <!-- Partials for modal windows -->
   {{ partial "douro-modal.html" . }}
   {{ partial "santo-modal.html" . }}
   {{ partial "braga-modal.html" . }}
     <div class="theme-page-container">
-      <div class="theme-page-content">
+      <div class="theme-page-content theme-page-space">
         {{ range where .Data.Pages ".Title" "Your New Machine" }}
           <div class="theme-page-content-title">
             <p><strong>{{ .Title }}</strong></p>
@@ -208,7 +208,7 @@
     <div class="Benefits-bg"></div>
     <div class="Benefits-container">
       <div class="theme-page-container">
-        <div class="theme-page-content">
+        <div class="theme-page-content theme-page-space">
           {{ range where .Data.Pages ".Title" "Benefits" }}
             <div class="theme-page-content-title theme-page-content-title--dark">
               <p>{{ .Title }}</p>
