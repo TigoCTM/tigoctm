@@ -1,9 +1,10 @@
  <!-- Braga modal window -->
 <span id="braga" class="target"><!-- Hidden anchor to open Douro modal container--></span>
- <div class="modal">
-   <div class="content vertical-align-middle">
-     <h2>Braga</h2>
-     <article>Lorem ipsum</article>
-     <a class="close-btn" href="#start">X</a>
-   </div>
- </div>
+ 	 {{ range where .Data.Pages ".Title" "braga_desc" }}
+	 <div class="modal">
+	   <div class="content vertical-align-middle">
+	     	{{ .Content }}
+	     	<a class="close-btn" href="#start">X</a>
+	   </div>
+	 </div>
+	 {{ end }}

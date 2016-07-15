@@ -1649,14 +1649,14 @@ fieldset {
   background-color: rgba(0,0,0,0.6);
 }
 .modal > .content {
-   text-align: left;
+   text-align: center;
    display: inline-block;
    background-color: #424242;
    box-sizing: border-box;
    color: white;
    position: relative;
-   width: 500px;
-   padding: 20px;
+   width: 50%;
+   padding: 32px;
  }
 
  .modal > .content .close-btn {
