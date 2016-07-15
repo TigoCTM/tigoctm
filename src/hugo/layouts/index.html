@@ -140,18 +140,67 @@
       </div>
     </div>
   <div class="theme-page Products">
+  <!-- Partials for modal windows -->
+  {{ partial "douro-modal.html" . }}
+  {{ partial "santo-modal.html" . }}
+  {{ partial "braga-modal.html" . }}
     <div class="theme-page-container">
       <div class="theme-page-content">
         {{ range where .Data.Pages ".Title" "Your New Machine" }}
           <div class="theme-page-content-title">
-            <p>{{ .Title }}</p>
-          </div>
-          <div class="theme-page-content--small">
-            <div class="u-row">
-              {{ .Content }}
-            </div>
+            <p><strong>{{ .Title }}</strong></p>
           </div>
         {{ end }}
+        <span id="start" class="target"><!-- Hidden anchor to close all modals --></span>
+          <div class="theme-page-content--small">
+            <div class="u-row">
+              <!-- Douro column -->
+              <div class="u-column u-column--hd4 u-column--md12">
+              	<div class="theme-page-content-title">
+              		<p>Douro</p>
+              	</div>
+                <div class="Products-item">
+                  <div class="theme-panel">
+                    <div class="Slides-slide">
+                      <div class="Slide-image"><img src="/img/douro.png" height="270" width="auto"></div>
+                    </div>
+                  </div>
+                  <!-- Modal Button - Douro -->
+                  <a href="#douro" class="u-btn theme-btn-primary">More Info</a>
+                </div>
+              </div>
+              <!-- Santo Tirso column -->
+              <div class="u-column u-column--hd4 u-column--md12">
+              <div class="theme-page-content-title">
+              		<p>Santo Tirso</p>
+              </div>
+                <div class="Products-item">
+                  <div class="theme-panel">
+                    <div class="Slides-slide">
+                      <div class="Slide-image"><img src="/img/santo-tirso.png" height="270" width="auto"></div>
+                    </div>
+                  </div>
+                  <!-- Modal Button - Santo Tirso -->
+                  <a href="#santo" class="u-btn theme-btn-primary">More Info</a>
+                </div>
+              </div>
+              <!-- Braga column -->
+              <div class="u-column u-column--hd4 u-column--md12">
+              <div class="theme-page-content-title">
+              		<p>Braga</p>
+              </div>
+                <div class="Products-item">
+                  <div class="theme-panel">
+                    <div class="Slides-slide">
+                      <div class="Slide-image"><img src="/img/braga.png" height="270" width="auto"></div>
+                    </div>
+                  </div>
+                  <!-- Modal Button - Braga -->
+                  <a href="#braga" class="u-btn theme-btn-primary">More Info</a>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
   </div>
