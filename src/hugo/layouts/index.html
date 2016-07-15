@@ -140,33 +140,10 @@
       </div>
     </div>
   <div class="theme-page Products">
-   <!-- Douro modal window -->
-   <span id="douro" class="target"><!-- Hidden anchor to open Douro modal container--></span>
-    <div class="modal">
-      <div class="content vertical-align-middle">
-        <h2>Douro</h2>
-        <article>Lorem ipsum</article>
-        <a class="close-btn" href="#start">X</a>
-      </div>
-    </div>
-    <!-- Santo Tirso modal window -->
-   <span id="santo" class="target"><!-- Hidden anchor to open Douro modal container--></span>
-    <div class="modal">
-      <div class="content vertical-align-middle">
-        <h2>Santo Tirso</h2>
-        <article>Lorem ipsum</article>
-        <a class="close-btn" href="#start">X</a>
-      </div>
-    </div>
-    <!-- Braga modal window -->
-   <span id="braga" class="target"><!-- Hidden anchor to open Douro modal container--></span>
-    <div class="modal">
-      <div class="content vertical-align-middle">
-        <h2>Braga</h2>
-        <article>Lorem ipsum</article>
-        <a class="close-btn" href="#start">X</a>
-      </div>
-    </div>
+  <!-- Partials for modal windows -->
+  {{ partial "douro-modal.html" . }}
+  {{ partial "braga-modal.html" . }}
+  {{ partial "santo-modal.html" . }}
     <div class="theme-page-container">
       <div class="theme-page-content">
         {{ range where .Data.Pages ".Title" "Your New Machine" }}
