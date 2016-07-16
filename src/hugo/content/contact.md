@@ -23,10 +23,6 @@ title = "Contact"
 	<input type='text' style='display:none;' name='returnURL' value='http&#x3a;&#x2f;&#x2f;tigoctm.com' /> 
 	 <!-- Do not remove this code. -->
 
-    <div class="Information-info">
-        <p>Please fill out the form for more information.</p>
-    </div>
-
   <div class="form-row">
     <label for="firstname">Name
       <span class="form-error" id="error-name">Please specify your name</span>
