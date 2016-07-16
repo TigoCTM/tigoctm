@@ -1483,10 +1483,10 @@ fieldset {
         width: auto; }
 
 .Path {
-  background-image: url(../img/path.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url(../img/path1.jpg), url(../img/path2.jpg), url(../img/path3.jpg);
+  background-size: auto 100%, auto 100%, auto 100%;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: top left, top right, top center;
   min-height: 1320px;
   margin: 160px 0; }
   .Path-item {
@@ -1502,23 +1502,23 @@ fieldset {
       .Path-item--1 .title {
         margin-top: 25px; }
     .Path-item--2 {
-      top: -210px; }
+      top: -184px; }
       .Path-item--2 .title {
-        margin-top: 100px; }
+        margin-top: 73px; }
     .Path-item--3 {
-      top: -52px; }
+      top: -38px; }
       .Path-item--3 .title {
         margin-top: 56px; }
     .Path-item--4 {
-      top: -46px; }
+      top: -35px; }
       .Path-item--4 .title {
-        margin-top: 53px; }
+        margin-top: 47px; }
     .Path-item--5 {
-      top: 122px; }
+      top: 143px; }
       .Path-item--5 .title {
         margin-top: 45px; }
     .Path-item--6 {
-      top: 127px; }
+      top: 148px; }
       .Path-item--6 .title {
         margin-top: 29px; }
 
