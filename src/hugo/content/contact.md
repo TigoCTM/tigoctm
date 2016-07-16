@@ -40,7 +40,7 @@ title = "Contact"
         </div>
         <div class="u-column u-column--hd12">
           <div class="theme-form-control">
-            <button class="u-btn u-btn-x-large theme-btn-primary">Send</button>
+            <button class="u-btn u-btn-x-large theme-btn-primary">Request More Information</button>
           </div>
         </div>
       </div>
