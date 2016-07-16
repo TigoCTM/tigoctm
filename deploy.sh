@@ -8,6 +8,9 @@ hugo # if using a theme, replace by `hugo -t <yourtheme>`
 # Go To Public folder
 cd public
 # Add changes to git.
+
+echo "tigoctm.com" > CNAME
+
 git add -A
 
 # Commit changes.
