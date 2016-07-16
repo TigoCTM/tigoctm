@@ -666,6 +666,74 @@ fieldset {
     .u-btn-content p:first-child {
       font-size: 1rem; }
 
+.form-row {
+  width: 100%;
+  text-align: left;
+}
+
+.form-half-row {
+  width: 49.75%;
+  display: inline-block;
+}
+
+.form-align {
+  text-align: left;
+}
+
+.form-error {
+  color: #DA0000;
+  display: none;
+}
+
+.contact-info {
+  color: #C3C3C3;
+  padding-left: 1rem;
+}
+
+.contact-info::before {
+  content: "(";
+}
+
+.contact-info::after {
+  content: ")";
+}
+
+form {
+  padding: 0 1rem;
+}
+
+label {
+  color: #545454;
+  text-align: left;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+
+input {
+  height: 2.5rem;
+  padding: 0.1rem 0.5rem;
+}
+
+textarea {
+  padding: 0.5rem;
+  resize: none;
+}
+
+input, textarea {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+  border: 1px solid #C3C3C3;
+  border-radius: 2px;
+}
+
+input[type=text], textarea {
+  width: 100%;
+}
+
+
+
 .u-form {
   width: 100%; }
   .u-form input,
