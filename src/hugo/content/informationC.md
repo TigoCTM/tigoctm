@@ -4,7 +4,7 @@ draft = false
 title = "Information C"
 
 +++
-##   Recover Your Investment in 3 – 6 Months
+##   Recover Your Investment in 3 – 9 Months
 
 Bitcoin ATM Machines used to be limited in flexibility and only accessible to technical savvy engineers. They were complex to use, run, and upgrade. But TigoCTM opens the market to alternative cryptocurrencies such as Dash and allows any business owner who wants a ground floor, revenue-generating business to get started with limited cryptocurrency knowledge or tech skills.
  
