@@ -215,9 +215,7 @@
             </div>
             <div class="Benefits-content">
               <div class="theme-page-content--small">
-                <div class="u-row">
-                  {{ .Content }}
-                </div>
+                {{ .Content }}
               </div>
             </div>
           {{ end }}
@@ -243,9 +241,6 @@
     <div class="theme-page-container">
       <div class="theme-page-content">
         <div class="theme-page-content--small">
-          {{ range where .Data.Pages ".Title" "Information D" }}
-            {{ .Content }}
-          {{ end }}
           {{ range where .Data.Pages ".Title" "How It Works" }}
             {{ .Content }}
           {{ end }}

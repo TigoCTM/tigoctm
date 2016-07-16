@@ -1569,10 +1569,10 @@ fieldset {
     height: 100%;
     position: relative;
     z-index: 1; }
+  .Benefits-content {
+    color: white; }
   .Benefits-content p,
   .Benefits-content h3 {
-    color: white; }
-  .Benefits-content p {
     padding: 10px 0; }
   .Benefits-info {
     margin: auto;
