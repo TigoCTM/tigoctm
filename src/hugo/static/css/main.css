@@ -1686,7 +1686,7 @@ input[type=text], textarea {
       text-align: justify;
       padding: 10px 0; }
 
-/* Modal window sample styles */
+/* Modal window */
 .modal::before {
   content: '';
   display: inline-block;
