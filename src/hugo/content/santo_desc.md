@@ -13,9 +13,6 @@ title = "santo_desc"
 
 ***
 
-- The Santo Tirso was designed to **enable swift cash out transactions** when attached to [Lamassu's](http://lamassu.is) Douro model. The concept is incredibly simple, we planted a fierce **three-note-per-second dispenser** in a handsome and secure floor stand.
+- Building on the success of the Douro, the upgraded Santo Tirso adds the ability to 
 
-- It is a **modular design** that can be added on at any point to any Lamassu Bitcoin machine ever sold. This gives operators the flexibility to start with cash to Bitcoin only and upgrade when they see fit.
-
-- Manufactured by skilled craftsmen in Northern Portugal.
-
+**both buy and sell cryptocurrency back into cash** for the smoothest transactions available in the market.
