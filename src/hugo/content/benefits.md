@@ -7,7 +7,7 @@ title = "Benefits"
 ###   Amazing Ground Floor Business Opportunity. Get These Incredible Benefits:
 
 *     All cash business so there’s no headaches from receivables, payroll, credit, etc.
-*     Fast return on investment of 1-3 months so you're enjoying residual income almost immediately.
+*     Fast return on investment of 3-9 months so you're enjoying residual income almost immediately.
 *     Ground floor opportunity so competition is almost non-existent (completely non-existent in most cities)
 *     Easy to operate and install, so no technological knowledge is required.
 *     Full training and support program so you don’t need to understand Bitcoin, cryptocurrency, or software to get started and you can profit right away.
