@@ -9,15 +9,12 @@ title = "douro_desc"
 
 ***
 
-### The best dressed and most advanced Bitcoin ATM yet.
-
-**The one that started it all.** 
+### The newest model of [Lamassu's](http://lamassu.is) original cash-to-Bitcoin machine. 
+##### The first Bitcoin ATM to hit the market.
 
 ***
+**Unique in the world of fiat-to-cryptocurrency machines,** 
 
-- [Lamassu's](http://lamassu.is) Bitcoin machine remains the best of its class, providing unparalleled user experience and speed.
+the Douro is a compact, attractive, and durable way 
 
-- The Douro is the newest model of [Lamassu's](http://lamassu.is) original cash to Bitcoin machine, which was **the first Bitcoin ATM** to hit the market. The new Douro is also now the **fastest** and **most user friendly** Bitcoin ATM to date.
-
-- Manufactured by skilled craftsmen in Northern Portugal.
-
+to quickly and reliably **buy cryptocurrency.** 
