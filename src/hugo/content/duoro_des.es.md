@@ -13,7 +13,7 @@ title = "douro_desc"
 ##### The first Bitcoin ATM to hit the market.
 
 ***
-**Unico en el mundo de maquinas fiat-a-criptodivisas,** 
+**Único en el mundo de maquinas fiat-a-criptodivisas,** 
 
 el Douro es compacto, atractivo y durable
 

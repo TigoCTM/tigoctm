@@ -9,10 +9,10 @@ title = "santo_desc"
 
 ***
 
-### [Lamassu's](http://lamassu.is) es un agil y robusto expendedor de efectivo de aparador.
+### [Lamassu's](http://lamassu.is) es un ágil y robusto expendedor de efectivo de aparador.
 
 ***
 
 - Construyendo en el exito de Duoro, el mejorado Santo Tirso agrega la habilidad de
 
-**tanto comprar como vender criptodivisas a efectivo** y transacción disponible más fáciles en el mercado .
+**tanto comprar como vender de criptodivisas a efectivo** con las transacciones más fáciles en el mercado .

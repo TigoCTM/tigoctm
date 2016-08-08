@@ -25,7 +25,7 @@ title = "Contact"
 
   <div class="form-row">
     <label for="firstname">Nombre
-      <span class="form-error" id="error-name">Please specify your name</span>
+      <span class="form-error" id="error-name">Favor de ingresar su nombre</span>
     </label>
     <div class="form-half-row" style="padding-right: 2%">
       <input type="text" maxlength="40" name="First Name" id="firstname"
@@ -64,14 +64,14 @@ title = "Contact"
   <div class="form-row">
     <label for="message">Mensaje
     <span class="form-error" id="error-message">
-		Necesitaremos alguno mensaje clave para saber que esta buscando.	
+		Necesitaremos cierta información necesaria para poder ayudarlo mejor.	
     </span>
     </label>
     <textarea name="Description" id="message" cols="40" rows="10" maxlength="1000"></textarea>
    </div>
 
   <div class="form-align">
-    <input type="submit" value="Request More Information">
+    <input type="submit" value="Solicite mayor información">
   </div>
 </div>
 

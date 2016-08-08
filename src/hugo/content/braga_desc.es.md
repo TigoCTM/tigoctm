@@ -13,6 +13,6 @@ title = "braga_desc"
 
 ***
 
-- Braga ofrece una **seguridad mejorada** y **postura con clase** a la de Douro. Cuando el piso abierto es la mejor opción, el Braga sobresaldra. La **estructura de metal interior** del Braga esta diseñado para asegurar la boveda de Douro y sellarla en el piso desde adentro.
+- Braga ofrece una **seguridad mejorada** y **posición con clase** a la de Douro. Cuando el escaparate es la mejor opción, Braga sobresaldrá. La **estructura de metal interior** del Braga esta diseñada para asegurar la boveda de Douro y sellarla en el piso desde adentro.
 
-- Creado por artesanos habiles en el norte de Portugal. 
+- Creado por habiles artesanos en el norte de Portugal. 

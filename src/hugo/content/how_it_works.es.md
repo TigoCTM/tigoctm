@@ -5,7 +5,7 @@ title = "How It Works"
 
 +++
 
-Criptodivisas esta avanzando de un pequeño nicho especializado a una popularidad general, las oportunidades son masivas. Pero como muchos cambios de paradigmas, los que llegan primero tendrán la oportunidad de sacar mayor provecho. Los que esperan serán dejados atraz. 
+Criptodivisas ha avanzando de un pequeño nicho especializado a una popularidad general, las oportunidades son masivas. Pero como muchos cambios de paradigmas, los que llegan primero tendrán la oportunidad de sacar mayor provecho. Los que esperan serán dejados atraz. 
 
 <div class="HowItWorks">
   <div class="HowItWorks-info">
@@ -14,7 +14,7 @@ Criptodivisas esta avanzando de un pequeño nicho especializado a una popularida
         <div class="HowItWorksInfo-item">
           <div class="HowItWorksInfo-image"><img src="/img/howitworks-1.png" height="200" width="auto"></div>
           <div class="HowItWorksInfo-title">
-            <p>Se dueño de un negocio 0 preocupaciones y todo efectivo.</p>
+            <p>Se dueño de un negocio con 0 preocupaciones y todo efectivo.</p>
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@ Criptodivisas esta avanzando de un pequeño nicho especializado a una popularida
         <div class="HowItWorksInfo-item">
           <div class="HowItWorksInfo-image"><img src="/img/howitworks-2.png" height="200" width="auto"></div>
           <div class="HowItWorksInfo-title">
-            <p>Generá alrededor de $3000 al mes de ingreso residual</p>
+            <p>Generá alrededor de $3,000 al mes de ingreso residual</p>
           </div>
         </div>
       </div>
