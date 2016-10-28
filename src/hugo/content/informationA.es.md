@@ -5,7 +5,9 @@ title = "Information A"
 
 +++
 
-##  Esta oportunidad de negocio innovadora, internacional y explosiva puede ser suya por menos de lo que imagina***
+##  Esta oportunidad de negocio innovadora, internacional y explosiva puede ser suya por menos de lo que imagina
+
+***
 
 *  Estas buscando una oportunidad de negocio sencilla, con altos retornos que genere efectivo con mayor control?
 
