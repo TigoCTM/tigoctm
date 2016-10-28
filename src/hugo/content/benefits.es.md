@@ -1,7 +1,7 @@
 +++
 date = "2016-07-07T19:40:19Z"
 draft = false
-title = "Benefits"
+title = "Beneficios"
 
 +++
 ###   Increible oportunidad de negocios. Obten estos increibles beneficios:
