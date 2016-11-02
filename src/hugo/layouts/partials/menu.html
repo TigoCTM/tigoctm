@@ -9,13 +9,15 @@
     <div class="TopbarContent-menu">
       <nav>
         <ul>
-          <li><a href="#About">About</a></li>
-          <li><a href="#HowItWorks">How</a></li>
-          <li><a href="#Products">Products</a></li>
-          <li><a href="#Benefits">Benefits</a></li>
-          <li><a href="#Contact">Contact</a></li>
+	  {{- $currentNode := . -}}
+	  {{ range .Site.Menus.main -}}
+	  <li class="{{ if $currentNode.IsMenuCurrent "main" . }}active{{ end }}">
+            <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+	  </li>
+	  {{- end }}
         </ul>
       </nav>
     </div>
   </div>
 </div>
+

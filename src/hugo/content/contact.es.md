@@ -1,7 +1,7 @@
 +++
 date = "2016-08-07T20:09:19Z"
 draft = false
-title = "Contact"
+title = "Contacto"
 
 +++
 
@@ -46,12 +46,12 @@ title = "Contact"
   </div>
 
   <div class="form-row">
-    <label for="company">Company <span class="contact-info">optional</span></label>
+    <label for="company">Empresa <span class="contact-info">optional</span></label>
     <input type="text" maxlength="100" name="Company" id="company">
   </div>
 
   <div class="form-row">
-    <label for="shipping">Shipping <span class="contact-info">opcional</span></label>
+    <label for="shipping">Envío <span class="contact-info">opcional</span></label>
     <div class="form-half-row" style="padding-right: 2%">
     	 <input type="text" maxlength="80" name="Country" id="country"
           	placeholder="País">

@@ -10,7 +10,7 @@ title = "douro_desc"
 ***
 
 ### The newest model of [Lamassu's](http://lamassu.is) original cash-to-Bitcoin machine. 
-##### The first Bitcoin ATM to hit the market.
+#### The first Bitcoin ATM to hit the market.
 
 ***
 **Unique in the world of fiat-to-cryptocurrency machines,** 
