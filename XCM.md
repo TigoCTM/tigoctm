@@ -15,7 +15,7 @@ Each coin will have a retail value of $10 (1.1-2x it's cost), when redeemed for 
 | 5       | $8   | 1,000,000 | $8,000,000 |
 | 6       | $8.5 | 1,250,000 | $10,625,000 |
 | 7       | $9   | 10,000,000 | $90,000,000 |
-| total   | N/A  | 13,850,000 | $119,750,000 |
+| total   | $8.65 (mean) | 13,850,000 | $119,750,000 |
 
 ## The machines
 
