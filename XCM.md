@@ -4,7 +4,7 @@ Pre-sale of cryptographic specialization machines, with built in hw security mod
 
 ## economics
 
-Each coin will have a retail value of $10 (1.1-2x it's cost), when redeemed for TigoCTM manufactured hardware or services, depending on ICO tranche.
+Each coin will have a retail value of $10 (1.1-2x it's cost), when redeemed for TigoCTM manufactured hardware or services.
 
 | Tranche | Cost | Supply  | Revenue |
 |---------|------|---------|---------|
