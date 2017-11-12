@@ -1,0 +1,100 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="cryptocurrency,crypto,digitalcurrency,bitcoin,ethereum,dash,guld,xcm,tigoctm,ctm,machine,computer,atm,teller,manufacturer,security,privacy" />
+  <title>Identify - TigoCTM Crypto Machines</title>
+  <link rel="icon" href="{{ url_for('static', filename='img/tigoctm.ico') }}" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css')}}" />
+</head>
+
+<body>
+  <div class="theme-page Header">
+    <div class="Topbar">
+      <div class="Topbar-content">
+        <div class="TopbarContent-logo">
+          <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo.svg') }}" height="40" width="auto" /></a>
+        </div>
+        {% include 'price-bar.html' %}
+      </div>
+    </div>
+  </div>
+
+  <div class="theme-page Information" style="margin-top: 60px;">
+    <div class="theme-page-container">
+      <div class="theme-page-content">
+        <div class="theme-page-content-title">
+          <p>{{ username }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="theme-page Information Information--light" style="margin-top: 60px;">
+    <div class="theme-page-container">
+      <div class="theme-page-content">
+        <div class="theme-page-content--small">
+          <div class="u-row">
+            <p>If you are {{ username }}, you can purchase XCM at the rates shown in the top by by sending to one of your "Input" addresses. Click for a QR code.</p>
+            <div class="u-column u-column--hd6 u-column--md12">
+              <div class="Information-info">
+                <h3 id="inputs">Inputs</h3>
+                <table>
+                {% if "BTC" not in depositAddresses %}
+                  <a href="{{ url_for('genaddress', commodity='BTC', username=username) }}"><button>Get Bitcoin Address</button></a>
+                {% endif %}
+                {% if "DASH" not in depositAddresses %}
+                  <a href="{{ url_for('genaddress', commodity='DASH', username=username) }}"><button>Get Dash Address</button></a>
+                {% endif %}
+                {% for commodity in depositAddresses %}
+                  {% for address in depositAddresses[commodity] %}
+                    {% if address != 'sub-total' %}
+                      <tr>
+                        <td><a href="{{ url_for('address', address=address) }}">{{ address }}</a></td>
+                        <td>-{{ depositAddresses[commodity][address] }}</td>
+                        <td>{{ commodity }}</td>
+                      </tr>
+                    {% endif %}
+                  {% endfor %}
+                  <tr>
+                    <td><strong>{{ commodity }} sub-total</strong></td>
+                    <td><strong>-{{ depositAddresses[commodity]['sub-total'] }}</strong></td>
+                    <td><strong>{{ commodity }}</strong></td>
+                  </tr>
+                {% endfor %}
+                </table>
+              </div>
+            </div>
+
+            <div class="u-column u-column--hd6 u-column--md12">
+              <div class="Information-info">
+                <h3 id="outputs">Outputs</h3>
+                <table>
+                {% for commodity in withdrawAddresses %}
+                  {% for address in withdrawAddresses[commodity] %}
+                    {% if address != 'sub-total' %}
+                      <tr>
+                        <td>{{ address }}</td>
+                        <td>{{ withdrawAddresses[commodity][address] }}</td>
+                        <td>{{ commodity }}<span style="color: red;">*</span></td>
+                      </tr>
+                    {% endif %}
+
+                  {% endfor %}
+                  <tr>
+                    <td><strong>{{ commodity }} sub-total</strong></td>
+                    <td><strong>{{ withdrawAddresses[commodity]['sub-total'] }}</strong></td>
+                    <td><strong>{{ commodity }}</strong></td>
+                  </tr>
+                {% endfor %}
+                </table>
+                <p style="color: red;"><strong>*No XCM Withdrawals will be released to Ethereum net before Jan. 1 2018. </strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
