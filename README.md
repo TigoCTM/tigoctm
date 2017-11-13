@@ -1,20 +1,17 @@
 # TigoCTM
 
 ### Version
-1.1.0
+2.0.0
 
 ### Installation
-TigoCTM requires [Hugo](https://gohugo.io/) to run.
+
+`pip install -r requirements.txt`
 
 ### Usage
 Open your favorite Terminal and run these commands:
 
 ```sh
-$ hugo
-$ hugo server
+$ flask run
 ```
 
-Open a web browser and navigate to: `http://localhost:1313`.
-
-### Testing Mirror
-Available at @indieinc 's [Github Pages.](https://indieinc.github.io/)
+Open a web browser and navigate to: `http://localhost:5000`.
