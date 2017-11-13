@@ -30,11 +30,12 @@ def tigoRender(path, kwargs=None):
             search, '%sledger/prices/' % TIGO_HOME
         ])
         if (grep and len(grep) > 1):
+            xgc = Decimal(re.search('XCM[ ]*\$[ 0-9.]*', grep).group(0).replace('XCM', '').replace('$', '').replace(' ', ''))
             kwargs['prices'] = {
-                'USD': Decimal(re.search('XCM[ ]*\$[ 0-9.]*', grep).group(0).replace('XCM', '').replace('$', '').replace(' ', '')),
-                'BTC': Decimal(re.search('\$ .[ 0-9.]*BTC', grep).group(0).replace('BTC', '').replace('$', '').replace(' ', '')) * Decimal(10),
-                'DASH': Decimal(re.search('\$ .[ 0-9.]*DASH', grep).group(0).replace('DASH', '').replace('$', '').replace(' ', '')) * Decimal(10),
-                'guld': Decimal(re.search('\$ .[ 0-9.]*guld', grep).group(0).replace('guld', '').replace('$', '').replace(' ', '')) * Decimal(10)
+                'USD': xgc,
+                'BTC': Decimal(re.search('\$ .[ 0-9.]*BTC', grep).group(0).replace('BTC', '').replace('$', '').replace(' ', '')) * xgc,
+                'DASH': Decimal(re.search('\$ .[ 0-9.]*DASH', grep).group(0).replace('DASH', '').replace('$', '').replace(' ', '')) * xgc,
+                'guld': Decimal(re.search('\$ .[ 0-9.]*guld', grep).group(0).replace('guld', '').replace('$', '').replace(' ', '')) * xgc
             }
             kwargs['prices']['BTC'] = kwargs['prices']['BTC'].quantize(Decimal(0.001))
             kwargs['prices']['DASH'] = kwargs['prices']['DASH'].quantize(Decimal(0.001))
@@ -64,6 +65,31 @@ def getAssets(commodity, address):
             return line.replace('Assets', '').replace(commodity, '').replace(' ', '').replace('Payable', '')
     return 0
 
+def getGuldAssets(username):
+    ledgerBals = subprocess.check_output([
+        '/usr/bin/ledger',
+        '-f',
+        '%sledger/guld/%s/included.dat' % (TIGO_HOME, username),
+        'bal'
+    ])
+    if (ledgerBals):
+        ledgerBals = ledgerBals.split('\n')
+    user = ''
+    tigos = 0
+    users = 0
+    for line in ledgerBals:
+        if 'tigoctm' in line:
+            user = 'tigoctm'
+        elif username in line:
+            user = username
+        if re.search(' (Assets|Payable):{0,1}\w*$', line):
+            amount = Decimal(line.replace('Assets', '').replace('guld', '').replace(' ', '').replace('Payable', ''))
+            if user == 'tigoctm':
+                tigos = amount
+            elif user == username:
+                users = amount
+    return tigos, users
+
 def getAddresses(username, side='deposit'):
     if side == 'deposit':
         search = ';tigoctm:%s' % username
@@ -78,7 +104,6 @@ def getAddresses(username, side='deposit'):
         ])
     except subprocess.CalledProcessError as cpe:
         print(cpe)
-    print(grep)
     if (grep):
         grep = grep.split('\n')
     addys = {}
@@ -92,6 +117,13 @@ def getAddresses(username, side='deposit'):
             addys[line[0]]['sub-total'] = addys[line[0]]['sub-total'] + assets
         else:
             addys[line[0]] = {line[1]: assets, 'sub-total': assets}
+    if os.path.exists('%sledger/guld/%s' % (TIGO_HOME, username)):
+        gassets = getGuldAssets(username)
+        if side == 'deposit':
+            addys['guld'] = { username: gassets[0] }
+        else:
+            addys['guld'] = { username: gassets[1] }
+
     return addys
 
 def mkdirp(path):
@@ -175,3 +207,4 @@ def address(address):
 
 if __name__ == '__main__':
     app.run()
+

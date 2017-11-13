@@ -76,7 +76,11 @@
                       <tr>
                         <td>{{ address }}</td>
                         <td>{{ withdrawAddresses[commodity][address] }}</td>
-                        <td>{{ commodity }}<span style="color: red;">*</span></td>
+                        <td>{{ commodity }}
+                          {% if commodity == 'XCM' %}
+                          <span style="color: red;">*</span>
+                          {% endif %}
+                        </td>
                       </tr>
                     {% endif %}
 
@@ -98,3 +102,4 @@
 </body>
 
 </html>
+
