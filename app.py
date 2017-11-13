@@ -13,6 +13,11 @@ configFilePath = './config.ini'
 configParser.read(configFilePath)
 app = Flask(__name__)
 
+if 'TIGO_HOME' in os.environ:
+    TIGO_HOME = os.environ['TIGO_HOME']
+else:
+    TIGO_HOME = "/home/tigoctm/"
+
 def tigoRender(path, kwargs=None):
     if kwargs is None:
         kwargs = {}
@@ -22,16 +27,18 @@ def tigoRender(path, kwargs=None):
         grep = subprocess.check_output([
             'grep',
             '-r',
-            search, '/home/tigoctm/ledger/prices/'
+            search, '%sledger/prices/' % TIGO_HOME
         ])
-        if (grep):
+        if (grep and len(grep) > 1):
             kwargs['prices'] = {
-                'USD': Decimal(10),
-                'BTC': (Decimal(re.search('\$ .[ 0-9.]*BTC', grep).group(0).replace('$', '').replace('BTC', '').replace('$', '').replace(' ', '')) * Decimal(10)),
-                'DASH': (Decimal(re.search('\$ .[ 0-9.]*DASH', grep).group(0).replace('$', '').replace('DASH', '').replace('$', '').replace(' ', '')) * Decimal(10))
+                'USD': Decimal(re.search('XCM[ ]*\$[ 0-9.]*', grep).group(0).replace('XCM', '').replace('$', '').replace(' ', '')),
+                'BTC': Decimal(re.search('\$ .[ 0-9.]*BTC', grep).group(0).replace('BTC', '').replace('$', '').replace(' ', '')) * Decimal(10),
+                'DASH': Decimal(re.search('\$ .[ 0-9.]*DASH', grep).group(0).replace('DASH', '').replace('$', '').replace(' ', '')) * Decimal(10),
+                'guld': Decimal(re.search('\$ .[ 0-9.]*guld', grep).group(0).replace('guld', '').replace('$', '').replace(' ', '')) * Decimal(10)
             }
             kwargs['prices']['BTC'] = kwargs['prices']['BTC'].quantize(Decimal(0.001))
             kwargs['prices']['DASH'] = kwargs['prices']['DASH'].quantize(Decimal(0.001))
+            kwargs['prices']['guld'] = kwargs['prices']['guld'].quantize(Decimal(0.001))
     except Exception as e:
         print(e)
     return render_template(path, **kwargs)
@@ -48,7 +55,7 @@ def getAssets(commodity, address):
     ledgerBals = subprocess.check_output([
         '/usr/bin/ledger',
         '-f',
-        '/home/tigoctm/ledger/%s/%s/included.dat' % (commodity, address), 'bal'
+        '%sledger/%s/%s/included.dat' % (TIGO_HOME, commodity, address), 'bal'
     ])
     if (ledgerBals):
         ledgerBals = ledgerBals.split('\n')
@@ -67,17 +74,18 @@ def getAddresses(username, side='deposit'):
         grep = subprocess.check_output([
             'grep',
             '-r',
-            search, '/home/tigoctm/ledger/'
+            search, '%sledger/' % TIGO_HOME
         ])
     except subprocess.CalledProcessError as cpe:
         print(cpe)
+    print(grep)
     if (grep):
         grep = grep.split('\n')
     addys = {}
     for line in grep:
         if len(line) == 0:
             break
-        line = line.replace('/home/tigoctm/ledger/', '').split('/')
+        line = line.replace('%sledger/' % TIGO_HOME, '').split('/')
         assets = Decimal(getAssets(line[0], line[1]))
         if (line[0] in addys):
             addys[line[0]][line[1]] = assets
@@ -105,7 +113,7 @@ def identity(username=None):
 
 @app.route('/id/<username>/<faddress>')
 def register(username, faddress):
-    mkdirp('/home/tigoctm/people/%s/' % username)
+    mkdirp('%speople/%s/' % (TIGO_HOME, username))
     print(username)
     print(faddress)
     if re.match('-----BEGIN PGP PUBLIC KEY BLOCK-----[a-zA-Z1-9 :]*-----END PGP PUBLIC KEY BLOCK-----', faddress):
@@ -121,18 +129,18 @@ def register(username, faddress):
             ])
             for line in imp.split('\n'):
                 if line.startsWith('fpr'):
-                    mkdirp('/home/tigoctm/keys/pgp/%s/' % username)
+                    mkdirp('%skeys/pgp/%s/' % (TIGO_HOME, username))
                     imp = subprocess.Popen([
                         'gpg2',
                         '--export',
                         '-a',
                         '>',
-                        '/home/tigoctm/keys/pgp/%s/%s.asc' % (username, re.search('\w{4,41}', line).group(0))
+                        '%skeys/pgp/%s/%s.asc' % (TIGO_HOME, username, re.search('\w{4,41}', line).group(0))
                     ])
     elif re.match('0x\w{10,40}', faddress):
-        if not os.path.exists('/home/tigoctm/ledger/XCM/%s/included.dat' % faddress):
-            mkdirp('/home/tigoctm/ledger/XCM/%s/' % faddress)
-            ledger = open('/home/tigoctm/ledger/XCM/%s/included.dat' % faddress, 'w')
+        if not os.path.exists('%sledger/XCM/%s/included.dat' % (TIGO_HOME, faddress)):
+            mkdirp('%sledger/XCM/%s/' % (TIGO_HOME, faddress))
+            ledger = open('%sledger/XCM/%s/included.dat' % (TIGO_HOME, faddress), 'w')
             ledger.write(";%s:tigoctm" % username)
             ledger.close()
     return redirect(url_for('identity', username=username))
@@ -143,23 +151,22 @@ def genaddress(commodity, username):
     if commodity not in addys or len(addys[commodity]) < 3:
         imp = subprocess.check_output([
             'find',
-            '/home/tigoctm/ledger/%s/' % commodity,
+            '%sledger/%s/' % (TIGO_HOME, commodity),
             '-size',
             '0',
             '-name',
             'included.dat'
         ]).split('included.dat')
         chosen = random.randint(0, len(imp) - 1)
-        imp[chosen] = imp[chosen].replace('/home/tigoctm/ledger/%s' % commodity, '')
+        imp[chosen] = imp[chosen].replace('%sledger/%s' % (TIGO_HOME, commodity), '')
         found = re.search('[^/]\w*[^/]', imp[chosen]).group(0)
-        # print('/home/tigoctm/ledger/%s/%s' % (commodity, found))
-        f = open('/home/tigoctm/ledger/%s/%s/included.dat' % (commodity, found), 'w')
+        f = open('%sledger/%s/%s/included.dat' % (TIGO_HOME, commodity, found), 'w')
         f.write(';tigoctm:%s' % username)
         f.close()
     return redirect(url_for('identity', username=username))
 
 @app.route('/price/<commodity>')
-def price(commit):
+def price(commodity):
     return tigoRender('price.html')
 
 @app.route('/address/<address>')
