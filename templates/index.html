@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="cryptocurrency,crypto,digitalcurrency,bitcoin,ethereum,dash,guld,xcm,tigoctm,ctm,machine,computer,atm,teller,manufacturer,security,privacy" />
+  <meta name="keywords" content="cryptocurrency,crypto,digitalcurrency,bitcoin,ethereum,dash,guld,xcm,tigoctm,ctm,machine,computer,atm,teller,manufacturer,security,privacy"
+  />
   <title>TigoCTM Crypto Machines</title>
   <link rel="icon" href="{{ url_for('static', filename='img/tigoctm.ico') }}" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css')}}" />
@@ -14,7 +15,9 @@
     <div class="Topbar">
       <div class="Topbar-content">
         <div class="TopbarContent-logo">
-          <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='img/logo.svg') }}" height="40" width="auto" /></a>
+          <a href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='img/logo.svg') }}" height="40" width="auto" />
+          </a>
         </div>
         {% include 'price-bar.html' %}
       </div>
@@ -34,7 +37,10 @@
               <h1 id="">The X Coin Machine ICO</h1>
               <hr />
               <h4 id="">
-X Coin Machines (XCM) are gift certificate tokens for TigoCTM. Each XCM is redeemable for $10 worth of hardware from TigoCTM at up to 50% off the retail price. ICO proceeds will go to funding the production of the first line of TigoCTM's products.</h4><a href="{{ url_for('identify'
+                X Coin Machines (XCM) are gift certificate tokens for TigoCTM. Each XCM is redeemable for $10 worth of hardware from TigoCTM
+                at up to 50% off the retail price. ICO proceeds will go to funding the production of the first line of TigoCTM's
+                products.</h4>
+              <a href="{{ url_for('identify'
 ) }}" class="u-btn u-btn-x-large theme-btn-primary">Buy Now</a>
             </div>
           </div>
@@ -51,7 +57,8 @@ X Coin Machines (XCM) are gift certificate tokens for TigoCTM. Each XCM is redee
             <p>Cryptographically Secure Products</p>
           </div>
           <hr />
-          <iframe src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1iCS4nzS_2rAs9hZpJzGfP6ZLJnqECjK7FX4rvsFnDq4&amp;font=Default&amp;lang=en&amp;initial_zoom=2&amp;height=650" width="100%" height="650" frameborder="0" allowfullscreen=""></iframe>
+          <iframe src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1iCS4nzS_2rAs9hZpJzGfP6ZLJnqECjK7FX4rvsFnDq4&amp;font=Default&amp;lang=en&amp;initial_zoom=2&amp;height=650"
+            width="100%" height="650" frameborder="0" allowfullscreen=""></iframe>
         </div>
       </div>
     </div>
@@ -82,12 +89,21 @@ X Coin Machines (XCM) are gift certificate tokens for TigoCTM. Each XCM is redee
             <div class="u-column u-column--hd4 u-column--md9">
               <div class="Information-info">
                 <h3 id="featuring-guld">Featuring guldOS</h3>
-                <p><img style="max-width: 150px; float: left; padding-right: 5px;" src="{{ url_for('static', filename='img/6_guld_ gold_logo.png') }}" /><a href="https://guld.io/guldOS-Specification.pdf" target="_blank">GuldOS</a> is a privacy focused variant of <a href="https://gentoo.org" target="_blank">Gentoo Linux</a>. GuldOS uses openPGP paired with a TigoCTM hardware security module to encrypt your disk, folders,
-                emails, passwords, blockchain wallets, and more.</p>
+                <p>
+                  <img style="max-width: 150px; float: left; padding-right: 5px;" src="{{ url_for('static', filename='img/6_guld_ gold_logo.png') }}"
+                  />
+                  <a href="https://guld.io/guldOS-Specification.pdf" target="_blank">GuldOS</a> is a privacy focused variant of
+                  <a href="https://gentoo.org" target="_blank">Gentoo Linux</a>. GuldOS uses openPGP paired with a TigoCTM hardware security module to encrypt your disk,
+                  folders, emails, passwords, blockchain wallets, and more.</p>
 
-                <p>The decentralized <a href="https://guld.io/guldFS-Specification.pdf" target="_blank">guld filesystem</a> allows you to securely share data between your different TigoCTM devices. You can use this as your secure, private cloud, or to interact with other members of the guld network.</p>
+                <p>The decentralized
+                  <a href="https://guld.io/guldFS-Specification.pdf" target="_blank">guld filesystem</a> allows you to securely share data between your different TigoCTM devices. You can use
+                  this as your secure, private cloud, or to interact with other members of the guld network.</p>
 
-                <p>Each TigoCTM device will ship with some guld tokens so it can register on the global, decentralized guld network. Through the guld network, any file or directory can be shared and trustlessly governed by a user defined consensus group. (see the <a href="https://guld.io/guld-whitepaper.pdf" target="_blank">guld consensus whitepaper</a>)</p>
+                <p>Each TigoCTM device will ship with some guld tokens so it can register on the global, decentralized guld
+                  network. Through the guld network, any file or directory can be shared and trustlessly governed by a user
+                  defined consensus group. (see the
+                  <a href="https://guld.io/guld-whitepaper.pdf" target="_blank">guld consensus whitepaper</a>)</p>
 
                 <!-- <p>It is the goal of TigoCTM and guld to gradually replace all on and offline authentication with a single hardware key. This key could take the form of a sim card, or a usb drive, and would protect a user's digital identity with the same high standard of security used today to store billions of dollars worth of cryptocurrency.</p> -->
               </div>
@@ -111,11 +127,19 @@ X Coin Machines (XCM) are gift certificate tokens for TigoCTM. Each XCM is redee
 
         <div class="theme-page-content--small">
           <ul>
-            <li><a href="{{ url_for('static', filename='img/security-layers.jpg') }}" target="_blank">TigoCTM Security Layers</a></li>
+            <li>
+              <a href="{{ url_for('static', filename='img/security-layers.jpg') }}" target="_blank">TigoCTM Security Layers</a>
+            </li>
             <li>TigoCTM whitepaper (coming soon!)</li>
-            <li><a href="https://guld.io/guld-whitepaper.pdf" target="_blank">guld consensus whitepaper</a></li>
-            <li><a href="https://guld.io/guldFS-Specification.pdf" target="_blank">guldFS Decentralized FileSystem</a></li>
-            <li><a href="https://guld.io/guldFS-Specification.pdf" target="_blank">guldOS Operating System</a></li>
+            <li>
+              <a href="https://guld.io/guld-whitepaper.pdf" target="_blank">guld consensus whitepaper</a>
+            </li>
+            <li>
+              <a href="https://guld.io/guldFS-Specification.pdf" target="_blank">guldFS Decentralized FileSystem</a>
+            </li>
+            <li>
+              <a href="https://guld.io/guldFS-Specification.pdf" target="_blank">guldOS Operating System</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -131,19 +155,27 @@ X Coin Machines (XCM) are gift certificate tokens for TigoCTM. Each XCM is redee
             <div class="theme-page-content--small">
               <div class="Information-info">
                 <h2 id="team">Team</h2>
-                <p>TigoCTM was founded in 2014 by Bitcoin veterans Cindy Zimmerman and Judith Katzman. Initially a <a href="http://lamassu.is/" target="_blank" style="color: black;">Lamassu</a> teller machine upgrader, reseller, and operator, TigoCTM has decided to pivot to manufacturing
-                  a whole line of crypto-specialized machines, from desktops to smart phones and a whole new line of teller machines.</p>
+                <p>TigoCTM was founded in 2014 by Bitcoin veterans Cindy Zimmerman and Judith Katzman. Initially a
+                  <a href="http://lamassu.is/"
+                    target="_blank" style="color: black;">Lamassu</a> teller machine upgrader, reseller, and operator, TigoCTM has decided to pivot to manufacturing
+                  a whole line of crypto-specialized machines, from desktops to smart phones and a whole new line of teller
+                  machines.</p>
 
                 <div class="card">
                   <img style="width: 100%;" src="{{ url_for('static', filename='img/cindyz.jpg') }}" alt="Cindy-Zimmerman" />
 
                   <div class="container">
-                    <h4><b>Cindy Zimmerman</b></h4>
+                    <h4>
+                      <b>Cindy Zimmerman</b>
+                    </h4>
 
-                    <p><b>CEO &amp; Co-founder</b></p>
+                    <p>
+                      <b>CEO &amp; Co-founder</b>
+                    </p>
 
-                    <p>Cindy has a masters degree in Digital Forensics &amp; Cybersecurity. In 2012, she was the second employee at Bitcoin exchange <a href="https://coinapult.com" target="_blank">Coinapult</a>, and managed the technical team there until leaving
-                      to found TigoCTM in 2014.</p>
+                    <p>Cindy has a masters degree in Digital Forensics &amp; Cybersecurity. In 2012, she was the second employee
+                      at Bitcoin exchange
+                      <a href="https://coinapult.com" target="_blank">Coinapult</a>, and managed the technical team there until leaving to found TigoCTM in 2014.</p>
                   </div>
                 </div>
 
@@ -151,11 +183,17 @@ X Coin Machines (XCM) are gift certificate tokens for TigoCTM. Each XCM is redee
                   <img style="width: 100%;" src="{{ url_for('static', filename='img/judithk.jpeg') }}" alt="Judith-Katzman" />
 
                   <div class="container">
-                    <h4><b>Judith Katzman</b></h4>
+                    <h4>
+                      <b>Judith Katzman</b>
+                    </h4>
 
-                    <p><b>COO &amp; Co-founder</b></p>
+                    <p>
+                      <b>COO &amp; Co-founder</b>
+                    </p>
 
-                    <p>Judith has been involved in the Bitcoin world since 2012. She has worked at various bitcoin exchanges and bitcoin enterprises. In addition, she has over 20 years of IT experience. Judith has an MA in Computer Science from CUNY Queens.
+                    <p>Judith has been involved in the Bitcoin world since 2012. She has worked at various bitcoin exchanges
+                      and bitcoin enterprises. In addition, she has over 20 years of IT experience. Judith has an MA in Computer
+                      Science from CUNY Queens.
                     </p>
                   </div>
                 </div>
@@ -164,12 +202,17 @@ X Coin Machines (XCM) are gift certificate tokens for TigoCTM. Each XCM is redee
                   <img style="width: 100%;" src="{{ url_for('static', filename='img/mike.jpg') }}" alt="Mike Zabary" />
 
                   <div class="container">
-                    <h4><b>Mike Zabary</b></h4>
+                    <h4>
+                      <b>Mike Zabary</b>
+                    </h4>
 
-                    <p><b>Chief Hardware Engineer</b></p>
+                    <p>
+                      <b>Chief Hardware Engineer</b>
+                    </p>
 
-                    <p>Michael has over 20 years experience in both hardware and software. He has built hundreds of desktop computers with specialized components to accommodate special application requirements. In addition he is CompTIA, A+ and Microsoft (MCP)
-                      certified. Michael also passes his time as a Python developer.</p>
+                    <p>Michael has over 20 years experience in both hardware and software. He has built hundreds of desktop
+                      computers with specialized components to accommodate special application requirements. In addition
+                      he is CompTIA, A+ and Microsoft (MCP) certified. Michael also passes his time as a Python developer.</p>
                   </div>
                 </div>
 
@@ -177,12 +220,19 @@ X Coin Machines (XCM) are gift certificate tokens for TigoCTM. Each XCM is redee
                   <img style="width: 100%;" src="{{ url_for('static', filename='img/isysd.png') }}" alt="Ira Miller" />
 
                   <div class="container">
-                    <h4><b>Ira Miller</b></h4>
+                    <h4>
+                      <b>Ira Miller</b>
+                    </h4>
 
-                    <p><b>Technical Advisor</b></p>
+                    <p>
+                      <b>Technical Advisor</b>
+                    </p>
 
-                    <p>Ira Miller is the Founder of <a href="https://guld.io" target="_blank">Guld</a>. Technical Advisor to TigoCTM, Dash, Bitt and more fantastic projects. Ira has founded many technology startups, lately focused on the blockchain sector. In
-                      2012, Ira co-founded global payment processor Coinapult, selling the company in 2015 to pursue open source collaborative projects through the Guld.</p>
+                    <p>Ira Miller is the Founder of
+                      <a href="https://guld.io" target="_blank">Guld</a>. Technical Advisor to TigoCTM, Dash, Bitt and more fantastic projects. Ira has founded many
+                      technology startups, lately focused on the blockchain sector. In 2012, Ira co-founded global payment
+                      processor Coinapult, selling the company in 2015 to pursue open source collaborative projects through
+                      the Guld.</p>
                   </div>
                 </div>
               </div>
@@ -198,109 +248,10 @@ X Coin Machines (XCM) are gift certificate tokens for TigoCTM. Each XCM is redee
       <div class="theme-page-content">
         <div class="theme-page-content--small">
           <a href="{{ url_for('identify') }}" class="u-btn u-btn-x-large theme-btn-primary">Buy Now</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="contact" class="theme-page Contact">
-    <div class="theme-page-container">
-      <div class="theme-page-content">
-        <div class="theme-page-content-title">
-          <p>Contact</p>
-        </div>
-
-        <div class="theme-page-content--x-small">
-          <div id="crmWebToEntityForm">
-            <form action="https://web.archive.org/web/20170606084935/https://crm.zoho.com/crm/WebToLeadForm" name="WebToLeads2015827000000104023" method="post" onsubmit='javascript:document.charset="UTF-8"; return checkMandatory()' accept-charset="UTF-8">
-              <input style="display:none;" name="xnQsjsdp" value="670cbb754cef376380a8265570fb68c7df5f3e6204d431b7146d5bccf526d56b" type="text" /> <input name="zc_gad" id="zc_gad" value="" type="hidden" />
-              <input style="display:none;" name="xmIwtLD" value="d34dc902754bbad7bfd1b82d9ff639116ed04a606f9816fe2a3471b654886c1c" type="text" /> <input style="display:none;" name="actionType" value="TGVhZHM=" type="text" /> <input style="display:none;"
-                name="returnURL" value="http://tigoctm.com" type="text" />
-
-              <div class="form-row">
-                <label for="firstname">Name <span class="form-error" id=
-                "error-name">Please specify your name</span></label>
-
-                <div class="form-half-row" style="padding-right: 2%">
-                  <input maxlength="40" name="First Name" id="firstname" placeholder="First" type="text" />
-                </div>
-
-                <div class="form-half-row">
-                  <input maxlength="80" name="Last Name" id="lastname" placeholder="Last" type="text" />
-                </div>
-              </div>
-
-              <div class="form-row">
-                <input maxlength="100" name="Email" id="email" placeholder="Email" type="text" /> <span class="form-error" id="error-email">Please specify your
-                email so we can communicate with you</span>
-              </div>
-
-              <div class="form-row">
-
-                <div class="form-row">
-                  <label for="message">Message <span class="form-error" id=
-                  "error-message">We will need some message to know what you are
-                  after</span></label>
-                  <textarea name="Description" id="message" cols="40" rows="10" maxlength="1000">
-</textarea>
-                </div>
-
-                <div class="form-align">
-                  <input value="Request More Information" type="submit" />
-                </div>
-              </div>
-
-              <p>
-                <script type="text/javascript">
-                  //<![CDATA[
-                  var fields = [ & lsquo;firstname & rsquo;, & lsquo;lastname & rsquo;, &
-                    lsquo;email & rsquo;, & lsquo;message & rsquo;, & lsquo;city & rsquo;, &
-                    lsquo;country & rsquo;
-                  ];
-                  var basicEmail = /^[^ @]+@([^ @]+){2,}.([^ @]+){2,}$/; < \/p>
-
-                  <
-                  pre > < code > function checkMandatory() {
-                      /* Hide any errors. */
-                      var allErrors = document.getElementsByClassName('form-error');
-                      for (var i = 0; i & lt; allErrors.length; i++) {
-                        allErrors[i].style.display = 'none';
-                      }
-
-                      /* Validate the form. */
-                      var form = document.forms['WebToLeads2015827000000104023'];
-                      for (var i = 0; i & lt; fields.length; i++) {
-                        var fieldObj = form[fields[i]];
-                        if (fieldObj) {
-                          var failed = fieldObj.value.replace(/^\s+|\s+$/g, '').length ===
-                            0;
-                          if (!failed & amp; & amp; fields[i] === 'email') {
-                            failed = !basicEmail.test(fieldObj.value);
-                          }
-
-                          if (failed) {
-                            fieldObj.focus();
-                            var name = fields[i];
-                            if (name.endsWith('name')) {
-                              name = 'name';
-                            }
-                            var err = document.getElementById('error-' + name);
-                            if (err) {
-                              err.style.display = 'block';
-                            }
-                            return false;
-                          }
-                        }
-                      }
-                    } < \/code><\/pre>
-
-                    <
-                    p >
-                  //]]>
-                </script>
-              </p>
-            </form>
-          </div>
+          <form id="contactForm" class="subscribe-form form-inline" action="mailto:info@tigoctm.com?subject=Contact Form" method="POST"
+            enctype="text/plain">
+            <button type="submit" class="u-btn u-btn-x-large theme-btn-primary">Contact Mail</button>
+          </form>
         </div>
       </div>
     </div>
