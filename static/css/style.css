@@ -1,0 +1,199 @@
+/*
+Template Name: TigoCTM
+Description: HTML5 / CSS3 One Page
+Version: 0.1
+Author: Chriss Mejía
+Website: https://chrissmejia.com
+*/
+
+a, a:visited {
+    color: #d34740;
+}
+
+a:hover, a:active {
+    color: #ca1616;
+}
+
+b {
+    font-weight: bold;
+}
+
+.header {
+    width: 100%;
+    margin-top: -4rem;
+    background: url("../img/motherboard.svg");
+    background-size: cover;
+    padding: 8rem 4rem 4rem 4rem;
+}
+
+.header h1 {
+    margin-bottom: 1rem;
+}
+
+.header button, .header button:visited {
+    margin: 1.4rem 0 0.4rem 0px;
+    background: inherit;
+    color: #ca1616;
+    border: 2px #ca1616 solid;
+}
+
+.header button:hover {
+    margin: 1.4rem 0 0.4rem 0px;
+    background: #ca1616;
+    color: #ffffff;
+    border: 2px #ca1616 solid;
+}
+
+.header button:active, .header button:focus {
+    background: #a21d1d;
+    color: #ffffff;
+}
+
+.header img {
+    display: inline-block;
+    height: 24rem;
+    margin-bottom: -1rem;
+}
+
+.header .exclusive {
+    color: #777777;
+    font-size: 0.8rem;
+}
+
+#preorder {
+    margin-top: 3.6rem;
+}
+
+.navbar {
+    background: #424242;
+    padding: 0 1rem 0 0;
+    opacity: 0.9;
+}
+
+.navbar .navbar-brand {
+    color: rgba(0, 0, 0, .9);
+    padding: 1rem;
+}
+
+.navbar .navbar-brand.red {
+    background-color: #d0412d;
+    margin-right: 0;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+#isotipo {
+    width: 3rem;
+}
+
+#logotipo {
+    width: 6rem;
+}
+
+#section-xcm {
+    background: #f3f3f2;
+    color: #7b7b7b;
+    padding: 3rem 0;
+}
+
+#section-roadmap h1 {
+    margin: 0 0 1rem 0;
+}
+
+#section-roadmap b {
+    font-weight: 500;
+}
+
+#section-roadmap p {
+    margin-bottom: 0.4rem;
+}
+
+#section-roadmap #roadmap-description {
+    margin: 0 0 1.4rem 0;
+}
+
+#section-roadmap .schedule ul {
+    padding: 0 2rem 0 0;
+    border-right: 2px solid #ddd;
+}
+
+#section-roadmap .schedule ul li {
+    list-style-type: none;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 1.9rem;
+}
+
+#section-seminar .schedule ul li:first-child {
+    padding-top: 0;
+}
+
+#section-roadmap .schedule ul li .mu-single-event {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+    -moz-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+    box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+}
+
+#section-roadmap .schedule ul li .mu-single-event::before {
+    content: '';
+    position: absolute;
+    top: 23px;
+    width: 0;
+    height: 0;
+    right: -15px;
+    border-style: solid;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #fff;
+}
+
+#section-roadmap .schedule ul li .mu-event-time::after {
+    content: '';
+    position: absolute;
+    right: -3.6rem;
+    top: 1.2rem;
+    transform: translateX(-50%);
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+#section-roadmap .schedule ul li .mu-event-time {
+    color: #367bc7;
+    text-align: right;
+    font-weight: 600;
+}
+
+#section-roadmap .schedule ul li .topic {
+    text-align: right;
+    font-weight: 400;
+    color: #586171;
+}
+
+#section-roadmap span {
+    font-size: 0.8rem;
+}
+
+#section-roadmap .details {
+    padding-left: 1.4rem;
+}
+
+#section-roadmap .thumbnail img {
+    height: 6rem;
+    width: 6rem;
+    margin-right: 2rem;
+}
+
+#section-seminar .thumbnail .caption {
+    display: inline-block;
+    top: 0.7rem;
+    position: relative;
+}
