@@ -12,52 +12,135 @@ a, a:visited {
 
 a:hover, a:active {
     color: #ca1616;
+    text-decoration: none;
 }
 
 b {
     font-weight: bold;
 }
 
+.emaillink {
+    text-align: right;
+    opacity: 0.4;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.emaillink img {
+    position: relative;
+    top: -0.1rem;
+}
+
+.emaillink span {
+    display: none;
+}
+
+.section-wrapper:hover .emaillink {
+    opacity: 0.8;
+}
+
+.section-wrapper:hover .emaillink span {
+    display: inline-block;
+}
+
 .header {
+    color: #a2a2a2;
     width: 100%;
     margin-top: -4rem;
-    background: url("../img/motherboard.svg");
-    background-size: cover;
     padding: 8rem 4rem 4rem 4rem;
+    background-color: rgb(32, 32, 32);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1)), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+    background-size: 100% 100%, 10px 10px, 10px 10px, 10px 5px;
+    background-position: 0px 0px, 0px 0px, 5px 5px, 0px 0px;
+    position: relative;
+    overflow: hidden;
 }
 
-.header h1 {
-    margin-bottom: 1rem;
+.header:after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    transform: rotate(30deg);
+    background: rgba(255, 255, 255, 0.13);
+    background: linear-gradient( to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100%);
+    animation: shine 5s infinite;
 }
 
-.header button, .header button:visited {
+@keyframes shine {
+    0% {
+        opacity: 0;
+        top: -110%;
+        left: -210%;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 0;
+        top: -30%;
+        left: -30%;
+    }
+}
+
+.header .container {
+    margin: 14rem auto;
+}
+
+#xcm_logo {
+    display: inline-block;
+    font-size: 8rem;
+    font-weight: bolder;
+    position: relative;
+    line-height: 6rem;
+}
+
+#xcm_logo .front {
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), color-stop(50%, rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 1)));
+    color: #666;
+    position: relative;
+    padding-left: 0.1rem;
+    padding-top: 0.1rem;
+}
+
+#xcm_logo .front:after {
+    content: 'XCM';
+    color: #f7f6f6;
+    text-shadow: 0 1px 0 white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#xcm_logo .back {
+    position: absolute;
+    top: 0px;
+    color: black;
+}
+
+#xcm_description {
+    margin: 1.4rem 0;
+}
+
+.header .now {
+    color: #b8b8b8;
+    font-size: 2rem;
+}
+
+.header .btn, .header .btn:visited {
     margin: 1.4rem 0 0.4rem 0px;
     background: inherit;
-    color: #ca1616;
-    border: 2px #ca1616 solid;
+    color: #b3b2b2;
+    border: 2px #b3b2b2 solid;
 }
 
-.header button:hover {
+.header .btn:hover {
     margin: 1.4rem 0 0.4rem 0px;
     background: #ca1616;
     color: #ffffff;
     border: 2px #ca1616 solid;
-}
-
-.header button:active, .header button:focus {
-    background: #a21d1d;
-    color: #ffffff;
-}
-
-.header img {
-    display: inline-block;
-    height: 24rem;
-    margin-bottom: -1rem;
-}
-
-.header .exclusive {
-    color: #777777;
-    font-size: 0.8rem;
 }
 
 #preorder {
@@ -67,7 +150,7 @@ b {
 .navbar {
     background: #424242;
     padding: 0 1rem 0 0;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .navbar .navbar-brand {
@@ -90,6 +173,47 @@ b {
 
 #logotipo {
     width: 6rem;
+}
+
+#section-products {
+    background: url("../img/motherboard.svg");
+    background-size: cover;
+    padding: 2rem;
+    position: relative;
+}
+
+#section-products h1 {
+    margin-bottom: 1rem;
+}
+
+#section-products button, .header button:visited {
+    margin: 1.4rem 0 0.4rem 0px;
+    background: inherit;
+    color: #ca1616;
+    border: 2px #ca1616 solid;
+}
+
+#section-products button:hover {
+    margin: 1.4rem 0 0.4rem 0px;
+    background: #ca1616;
+    color: #ffffff;
+    border: 2px #ca1616 solid;
+}
+
+#section-products button:active, .header button:focus {
+    background: #a21d1d;
+    color: #ffffff;
+}
+
+#section-products .product {
+    display: inline-block;
+    height: 12rem;
+    margin-bottom: -1rem;
+}
+
+#section-products .exclusive {
+    color: #777777;
+    font-size: 0.8rem;
 }
 
 #section-xcm {

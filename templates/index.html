@@ -43,13 +43,40 @@
     </div>
   </nav>
 
-  <header class="header text-center">
+  <a href="{{ url_for('identify') }}">
+    <header class="header text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div id="xcm_logo">
+              <div class="back">XCM</div>
+              <div class="front">XCM</div>
+            </div>
+            <div class="now">Available now.</div>
+          </div>
+          <div id="xcm_description" class="col-md-7 text-justify">
+            <div>
+              X Coin Machines (XCM) are gift certificate tokens for TigoCTM. Each XCM is redeemable for $10 worth of hardware from TigoCTM
+              at up to 50% off the retail price. ICO proceeds will go to funding the production of the first line of TigoCTM's
+              products.
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </a>
+
+  <section id="section-products" class="section-wrapper">
+    <div class="emaillink">
+      <span>Open email</span>
+      <img src="{{ url_for('static', filename='img/link.svg')}}" />
+    </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <img src="{{ url_for('static', filename='img/theanos.png')}}" />
+        <div class="col-md-4">
+          <img class="product" src="{{ url_for('static', filename='img/theanos.png')}}" />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
           <div id="preorder">
             <h1>Pre-order
               <b>Theano</b> now
@@ -58,19 +85,19 @@
               TigoCTM first generation Desktop Computer will come with GuldOS pre-installed, including full Bitcoin and Dash nodes. Files
               will be encrypted with PGP, using a built in Hardware Security Module (hsm).
             </div>
+            <!--
             <form id="contactForm" class="subscribe-form form-inline" action="mailto:info@tigoctm.com?subject=Theanos Pre-order" method="POST"
               enctype="text/plain">
               <button type="submit" class="btn btn-lg mx-auto">Pre-order mail</button>
             </form>
+          -->
             <div class="exclusive">
               Exclusively using XCM tokens.
             </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
-  </header>
+  </section>
 
   <section id="section-xcm" class="section-wrapper">
     <div class="container">
@@ -87,91 +114,91 @@
   </section>
 
   <section id="section-roadmap" class="section-wrapper section-seminar gray-bg">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12">
-                  <div class="section-title">
-                      <h1>Road Map</h1>
-                  </div>
-              </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title">
+            <h1>Road Map</h1>
           </div>
-
-          <div class="row">
-              <div id="roadmap-description" class="col-md-12 text-center">
-                  Cryptographically Secure Products.
-                  </br>
-                  </br>
-              </div>
-          </div>
-
-          <div class="row">
-              <div class="col-md-6 schedule">
-                  <ul>
-                      <li>
-                          <div class="mu-single-event">
-                              <p class="mu-event-time">Nov 1 to Apr 1</p>
-                              <div class="topic">Lifecycle of the XCM tokens from sale to final product unlock and redemption.
-                                  <span>(extended)</span>
-                              </div>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="mu-single-event">
-                              <p class="mu-event-time">Jan 1 to Jul 1</p>
-                              <div class="topic">Thano Desktop Pre-order</div>
-                              <p class="expected">Expected Ship Date: July 1</p>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="mu-single-event">
-                              <p class="mu-event-time">Jul 1 to Oct 1</p>
-                              <div class="topic">Server pre-orders</div>
-                              <p class="expected">Expected Ship Date: October 1</p>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="mu-single-event">
-                              <p class="mu-event-time">Oct 1 to Feb 1</p>
-                              <div class="topic">Laptop pre-orders</div>
-                              <p class="expected">Expected Ship Date: Feb 1</p>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="mu-single-event">
-                              <p class="mu-event-time">Feb 1 to May 1</p>
-                              <div class="topic">Tablet pre-orders</div>
-                              <p class="expected">Expected Ship Date: May 1</p>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="mu-single-event">
-                              <p class="mu-event-time">May 1 to Aug 1</p>
-                              <div class="topic">Crypto Teller Machine pre-orders</div>
-                              <p class="expected">Expected Ship Date: Aug 1</p>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="mu-single-event">
-                              <p class="mu-event-time">Aug 1 to Nov 1</p>
-                              <div class="topic">Smartphone pre-orders</div>
-                              <p class="expected">Expected Ship Date: Nov 1</p>
-                          </div>
-                      </li>
-                  </ul>
-
-              </div>
-          </div>
-
-          <div class="row">
-              <div class="col-md-12 details">
-                  <form id="contactForm" class="subscribe-form form-inline" action="mailto:public@iramiller.com?subject=RSVP Seminar" method="POST"
-                      enctype="text/plain">
-                      <button type="submit" class="btn btn-primary btn-lg mx-auto">RSVP MAIL</button>
-                  </form>
-              </div>
-          </div>
-
+        </div>
       </div>
+
+      <div class="row">
+        <div id="roadmap-description" class="col-md-12 text-center">
+          Cryptographically Secure Products.
+          </br>
+          </br>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 schedule">
+          <ul>
+            <li>
+              <div class="mu-single-event">
+                <p class="mu-event-time">Nov 1 to Apr 1</p>
+                <div class="topic">Lifecycle of the XCM tokens from sale to final product unlock and redemption.
+                  <span>(extended)</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="mu-single-event">
+                <p class="mu-event-time">Jan 1 to Jul 1</p>
+                <div class="topic">Thano Desktop Pre-order</div>
+                <p class="expected">Expected Ship Date: July 1</p>
+              </div>
+            </li>
+            <li>
+              <div class="mu-single-event">
+                <p class="mu-event-time">Jul 1 to Oct 1</p>
+                <div class="topic">Server pre-orders</div>
+                <p class="expected">Expected Ship Date: October 1</p>
+              </div>
+            </li>
+            <li>
+              <div class="mu-single-event">
+                <p class="mu-event-time">Oct 1 to Feb 1</p>
+                <div class="topic">Laptop pre-orders</div>
+                <p class="expected">Expected Ship Date: Feb 1</p>
+              </div>
+            </li>
+            <li>
+              <div class="mu-single-event">
+                <p class="mu-event-time">Feb 1 to May 1</p>
+                <div class="topic">Tablet pre-orders</div>
+                <p class="expected">Expected Ship Date: May 1</p>
+              </div>
+            </li>
+            <li>
+              <div class="mu-single-event">
+                <p class="mu-event-time">May 1 to Aug 1</p>
+                <div class="topic">Crypto Teller Machine pre-orders</div>
+                <p class="expected">Expected Ship Date: Aug 1</p>
+              </div>
+            </li>
+            <li>
+              <div class="mu-single-event">
+                <p class="mu-event-time">Aug 1 to Nov 1</p>
+                <div class="topic">Smartphone pre-orders</div>
+                <p class="expected">Expected Ship Date: Nov 1</p>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 details">
+          <form id="contactForm" class="subscribe-form form-inline" action="mailto:public@iramiller.com?subject=RSVP Seminar" method="POST"
+            enctype="text/plain">
+            <button type="submit" class="btn btn-primary btn-lg mx-auto">RSVP MAIL</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
 
   </section>
 
