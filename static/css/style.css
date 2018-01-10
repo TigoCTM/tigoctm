@@ -144,13 +144,13 @@ b {
 }
 
 #preorder {
-    margin-top: 3.6rem;
+    margin-top: 5rem;
 }
 
 .navbar {
-    background: #424242;
+    background: #1a1f23;
     padding: 0 1rem 0 0;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .navbar .navbar-brand {
@@ -178,12 +178,21 @@ b {
 #section-products {
     background: url("../img/motherboard.svg");
     background-size: cover;
-    padding: 2rem;
+    padding: 4rem;
     position: relative;
 }
 
 #section-products h1 {
     margin-bottom: 1rem;
+}
+
+#section-products h1 b {
+    color: #c51429;
+}
+
+#section-products h1 .expected {
+    color: #777777;
+    font-size: 0.8rem;
 }
 
 #section-products button, .header button:visited {
@@ -207,117 +216,123 @@ b {
 
 #section-products .product {
     display: inline-block;
-    height: 12rem;
+    height: 22rem;
     margin-bottom: -1rem;
 }
 
-#section-products .exclusive {
+.exclusive {
     color: #777777;
     font-size: 0.8rem;
 }
 
-#section-xcm {
+.expected {
+    color: #777777;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+#section-next {
     background: #f3f3f2;
     color: #7b7b7b;
     padding: 3rem 0;
 }
 
-#section-roadmap h1 {
-    margin: 0 0 1rem 0;
+#section-next .left {
+    font-size: 4rem;
+    line-height: 3rem;
+    font-weight: bold;
+    margin-top: 1.4rem;
 }
 
-#section-roadmap b {
-    font-weight: 500;
+#section-next .event-time {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
 }
 
-#section-roadmap p {
-    margin-bottom: 0.4rem;
-}
-
-#section-roadmap #roadmap-description {
-    margin: 0 0 1.4rem 0;
-}
-
-#section-roadmap .schedule ul {
-    padding: 0 2rem 0 0;
-    border-right: 2px solid #ddd;
-}
-
-#section-roadmap .schedule ul li {
-    list-style-type: none;
-    position: relative;
-    margin: 0 auto;
-    padding-top: 1.9rem;
-}
-
-#section-seminar .schedule ul li:first-child {
-    padding-top: 0;
-}
-
-#section-roadmap .schedule ul li .mu-single-event {
-    background-color: #fff;
-    -webkit-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
-    -moz-box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
-    box-shadow: 0 0 16px 0 rgba(32, 32, 47, 0.16);
-    position: relative;
-    top: 0;
-    width: 100%;
-    padding: 1rem;
-    text-align: left;
-}
-
-#section-roadmap .schedule ul li .mu-single-event::before {
-    content: '';
-    position: absolute;
-    top: 23px;
-    width: 0;
-    height: 0;
-    right: -15px;
-    border-style: solid;
-    border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent #fff;
-}
-
-#section-roadmap .schedule ul li .mu-event-time::after {
-    content: '';
-    position: absolute;
-    right: -3.6rem;
-    top: 1.2rem;
-    transform: translateX(-50%);
-    height: 24px;
-    width: 24px;
-    border-radius: 50%;
-    background: #ddd;
-}
-
-#section-roadmap .schedule ul li .mu-event-time {
-    color: #367bc7;
-    text-align: right;
-    font-weight: 600;
-}
-
-#section-roadmap .schedule ul li .topic {
-    text-align: right;
-    font-weight: 400;
-    color: #586171;
-}
-
-#section-roadmap span {
+#section-next h2 .expected {
+    color: #777777;
     font-size: 0.8rem;
 }
 
-#section-roadmap .details {
-    padding-left: 1.4rem;
+#section-roadmap {
+    color: #3c3c3c;
+    padding: 2rem 0;
 }
 
-#section-roadmap .thumbnail img {
-    height: 6rem;
-    width: 6rem;
-    margin-right: 2rem;
+#section-guld {
+    background: #1a1f23;
+    padding: 2rem 0;
+    color: #f4f3f2;
 }
 
-#section-seminar .thumbnail .caption {
+#section-guld img {
+    height: 12rem;
+    float: left;
+    padding-right: 0.4rem;
+    margin: 1.4rem 0;
+}
+
+#section-team h1 {
+    margin: 2rem 0;
+}
+
+#section-team .row {
+    margin-bottom: 2rem;
+}
+
+#section-team .member {
+    width: 100%;
+    max-width: 9rem;
+}
+
+footer {
+    color: white;
+    background: #51585d;
+    padding-top: 2em;
+}
+
+footer a {
+    color: #bfffff;
+}
+
+footer a:hover, footer a:visited, footer a:active {
+    color: white;
+}
+
+.footer-bottom {
+    background: #3d6277;
+    padding: 2em;
+}
+
+/**Sub Navigation**/
+
+.subnavigation-container {
+    background: #3d6277;
+}
+
+.subnavigation .nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.subnavigation-container {
+    text-align: center;
+}
+
+.subnavigation-container .navbar {
     display: inline-block;
-    top: 0.7rem;
-    position: relative;
+    margin-bottom: -6px;
+    /* Inline-block margin offffset HACK -Gilron */
+}
+
+.col-subnav a {
+    padding: 1rem 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.col-subnav .active {
+    border-top: 5px solid orange;
+    background: white;
+    color: black;
 }
