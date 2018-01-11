@@ -7,16 +7,20 @@ Website: https://chrissmejia.com
 */
 
 a, a:visited {
-    color: #d34740;
+    color: initial;
 }
 
 a:hover, a:active {
-    color: #ca1616;
+    color: initial;
     text-decoration: none;
 }
 
 b {
     font-weight: bold;
+}
+
+.section-padding {
+    padding: 2rem 0;
 }
 
 .emaillink {
@@ -61,8 +65,9 @@ b {
     content: "";
     position: absolute;
     width: 200%;
-    height: 200%;
+    height: 300%;
     opacity: 0;
+    top: -180%;
     transform: rotate(30deg);
     background: rgba(255, 255, 255, 0.13);
     background: linear-gradient( to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0.0) 100%);
@@ -72,7 +77,6 @@ b {
 @keyframes shine {
     0% {
         opacity: 0;
-        top: -110%;
         left: -210%;
     }
     50% {
@@ -80,7 +84,6 @@ b {
     }
     100% {
         opacity: 0;
-        top: -30%;
         left: -30%;
     }
 }
@@ -184,6 +187,7 @@ b {
 
 #section-products h1 {
     margin-bottom: 1rem;
+    line-height: 1.5rem;
 }
 
 #section-products h1 b {
@@ -192,7 +196,8 @@ b {
 
 #section-products h1 .expected {
     color: #777777;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 #section-products button, .header button:visited {
@@ -229,6 +234,7 @@ b {
     color: #777777;
     font-size: 0.8rem;
     font-weight: 500;
+    margin-top: 0.4rem;
 }
 
 #section-next {
@@ -237,16 +243,46 @@ b {
     padding: 3rem 0;
 }
 
-#section-next .left {
+
+#section-next h2 {
+    line-height: 1.1rem;
+}
+
+#section-next h2 .expected {
+    color: #777777;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+#section-next .calendar {
+    border: 0.1rem #7b7b7a solid;
+    width: 8rem;
+    display: inline-block;
+    border-radius: 0.6rem;
+    padding-bottom: 0.4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#section-next .calendar .title {
+    width: 100%;
+    color: #e4e4e4;
+    background: #7b7b7a;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    margin-bottom: 0.8rem;
+}
+
+#section-next .calendar .left {
     font-size: 4rem;
-    line-height: 3rem;
-    font-weight: bold;
-    margin-top: 1.4rem;
+    line-height: 3.4rem;
+    font-weight: 200;
 }
 
 #section-next .event-time {
-    font-size: 0.8rem;
-    margin-bottom: 0.2rem;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 #section-next h2 .expected {
@@ -265,6 +301,10 @@ b {
     color: #f4f3f2;
 }
 
+#section-guld a {
+    color: #ce4f4a;
+}
+
 #section-guld img {
     height: 12rem;
     float: left;
@@ -272,12 +312,14 @@ b {
     margin: 1.4rem 0;
 }
 
-#section-team h1 {
-    margin: 2rem 0;
+#section-team h3 {
+    margin-top: 0.4rem;
 }
 
 #section-team .row {
     margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem #fbfbfb solid;
 }
 
 #section-team .member {
@@ -285,18 +327,45 @@ b {
     max-width: 9rem;
 }
 
-footer {
-    color: white;
-    background: #51585d;
+.footer {
+    color: #636465;
+    background: #1f262b;
     padding-top: 2em;
 }
 
-footer a {
-    color: #bfffff;
+.footer a {
+    color: #8e97a0;
 }
 
-footer a:hover, footer a:visited, footer a:active {
-    color: white;
+.footer a:visited, .footer a:active {
+    color: #8e97a0;
+}
+
+.footer a:hover {
+    color: #a9abad;
+}
+
+.footer h4 {
+    font-weight: 300;
+    color: #a9abad;
+}
+
+.footer .isotipo {
+    width: 5rem;
+    margin-top: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer .logotipo {
+    width: 8rem;
+}
+
+.footer li span {
+    font-size: 0.8rem;
+}
+
+.footer img {
+    opacity: 0.6;
 }
 
 .footer-bottom {
