@@ -19,6 +19,18 @@ b {
     font-weight: bold;
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: #bb3928;
+    border-radius: 0;
+    border-color: #82281c;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    background-color: #8a2c1f;
+    border-color: #882c20;
+}
+
 .section-padding {
     padding: 2rem 0;
 }
@@ -404,4 +416,75 @@ b {
     border-top: 5px solid orange;
     background: white;
     color: black;
+}
+
+#identifyPage .header:after { 
+    display: none;
+}
+
+#identifyPage .header form {
+    display: inline-block;
+}
+
+#identifyPage .header label {
+    margin-bottom: 0.6rem;
+}
+
+#identifyPage .header .btn {
+    font-size: 1rem;
+    padding: 0.7rem;
+    color: #989898;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+}
+
+#identifyPage .header .btn:hover, #identifyPage .header .btn:active, #identifyPage .header .btn:visited {
+    background: #bb3928;
+    border-color: #541f18;
+    color: #e6e6e6;
+}
+
+#identifyPage .header input {
+    background: #000;
+    border: #6d6d6d solid 1px;
+    padding: 0.4rem;
+    color: #d4d4d4;
+    border-radius: 0.2rem;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+#identifyPage .header #name {
+    width: 12rem;
+}
+
+#identifyPage  #section-register {
+    background: #f3f3f2;
+    color: #7b7b7b;
+    padding: 3rem 0;
+}
+
+#identifyPage #section-register h2 {
+    padding: 0 0 2rem 0;
+}
+
+#identifyPage #section-register form {
+    display: inline-block;
+    max-width: 30rem;
+}
+
+#identifyPage #section-register input {
+    margin-bottom: 1rem;
+}
+
+#identifyPage #section-register #username, #identifyPage #section-register textarea {
+    width: 100%;
+} 
+
+#identifyPage #section-register .please_note {
+    font-size: 0.8rem;
+}
+
+#identifyPage #section-register .btn {
+    margin: 1.4rem auto;
 }
