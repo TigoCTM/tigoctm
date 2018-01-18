@@ -255,7 +255,6 @@ b {
     padding: 3rem 0;
 }
 
-
 #section-next h2 {
     line-height: 1.1rem;
 }
@@ -265,7 +264,6 @@ b {
     font-size: 1rem;
     font-weight: 300;
 }
-
 
 #section-next .calendar {
     border: 0.1rem #7b7b7a solid;
@@ -418,7 +416,7 @@ b {
     color: black;
 }
 
-#identifyPage .header:after { 
+#identifyPage .header:after {
     display: none;
 }
 
@@ -434,7 +432,8 @@ b {
     font-size: 1rem;
     padding: 0.7rem;
     color: #989898;
-    -webkit-transition: all 0.5s; /* Safari */
+    -webkit-transition: all 0.5s;
+    /* Safari */
     transition: all 0.5s;
 }
 
@@ -458,7 +457,7 @@ b {
     width: 12rem;
 }
 
-#identifyPage  #section-register {
+#identifyPage #section-register {
     background: #f3f3f2;
     color: #7b7b7b;
     padding: 3rem 0;
@@ -479,12 +478,39 @@ b {
 
 #identifyPage #section-register #username, #identifyPage #section-register textarea {
     width: 100%;
-} 
+}
 
 #identifyPage #section-register .please_note {
     font-size: 0.8rem;
+    margin-top: 0.8rem;
 }
 
 #identifyPage #section-register .btn {
     margin: 1.4rem auto;
+}
+
+#identityPage .header .container {
+    margin: 2rem auto;
+}
+
+#identityPage #xcm_logo .front::after {
+    display: none
+}
+
+#identityPage #xcm_logo {
+    font-size: 5rem;
+    line-height: 6rem;
+}
+
+#identityPage #xcm_logo .front {
+    color: #f3f3f3;
+}
+
+#identityPage .header .now {
+    color: #b8b8b8;
+    font-size: 1.4rem;
+}
+
+#identityPage #section-addresses {
+    padding: 5rem 0;
 }
