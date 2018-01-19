@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
     crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}" />
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -96,6 +96,16 @@
               <div class="exclusive">
                 Exclusively using XCM tokens.
               </div>
+              <div class="raised">
+                <div class="target">
+                  <span>$1.000.000</span> raised</div>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 100%"></div>
+                </div>
+                <p class="expected"><span>200%</span> of $500.000 goal</p>
+                <a href="{{ url_for('identify') }}" class="btn btn-secondary">Back it</a>
+              </div>
             </div>
           </div>
         </div>
@@ -106,7 +116,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-lg-9 text-justify">
-          <h2>Pre-order Server
+          <h2>Crowdfund Server
             <p class="expected">Expected ship date October 1</p>
           </h2>
           TigoCTM first generation Servers will come with GuldOS pre-installed, including full Bitcoin and Dash nodes. Files will be
@@ -118,11 +128,27 @@
         </div>
         <div class="col-md-4 col-lg-3 text-center">
           <div class="calendar">
-            <p class="title">Starting in</p>
+            <p class="title">Left</p>
             <div class="left">45</div>
             <span>days</span>
           </div>
-          <div class="event-time">(Comming July 1)</div>
+          <div class="event-time">(Comming April 1)</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-lg-9 text-justify">
+          <div class="raised">
+            <div class="target">
+              <span>18%</span> raised</div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="18" aria-valuemin="0"
+                aria-valuemax="100" style="width: 18%"></div>
+            </div>
+            <div class="expected">of $5.500.000 goal</div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3 text-center">
+          <a href="{{ url_for('identify') }}" class="btn">Back it</a>
         </div>
       </div>
 
@@ -138,6 +164,7 @@
 The TigoCTM Laptop Computer will come with GuldOS pre-installed, including full Bitcoin and Dash nodes. Files will be encrypted with PGP, using a built in Hardware Security Module (hsm). -->
           <div class="event-time">Comming October 1</div>
           <div class="expected">Exp. ship date February 1, 2019</div>
+          <a href="{{ url_for('identify') }}" class="btn">Back it</a>
         </div>
         <div class="col-md-3">
           <h5>Tablet</h5>
@@ -145,6 +172,7 @@ The TigoCTM Laptop Computer will come with GuldOS pre-installed, including full 
 The TigoCTM Laptop Computer will come with GuldOS pre-installed, including full Bitcoin and Dash nodes. Files will be encrypted with PGP, using a built in Hardware Security Module (hsm). -->
           <div class="event-time">Comming February 1, 2019</div>
           <div class="expected">Exp. ship date May 1, 2019</div>
+          <a href="{{ url_for('identify') }}" class="btn">Back it</a>
         </div>
         <div class="col-md-3">
           <h5>Crypto Teller Machine</h5>
@@ -152,6 +180,7 @@ The TigoCTM Laptop Computer will come with GuldOS pre-installed, including full 
 The TigoCTM Crypto Teller Machine will come with GuldOS light pre-installed, requiring a TigoCTM Server to pair with. Files will be encrypted with PGP, using a built in Hardware Security Module (hsm). Each CTM will be able to maintain it's own inventory and records, making requests for transactions to the paired TigoCTM Server. -->
           <div class="event-time">Comming May 1, 2019</div>
           <div class="expected">Exp. ship date August 1, 2019</div>
+          <a href="{{ url_for('identify') }}" class="btn">Back it</a>
         </div>
         <div class="col-md-3">
           <h5>Smartphone</h5>
@@ -159,6 +188,7 @@ The TigoCTM Crypto Teller Machine will come with GuldOS light pre-installed, req
 The TigoCTM Smart Phone will come with GuldOS light pre-installed, requiring a TigoCTM Server or desktop to pair with for full functionality. Files will be encrypted with PGP, using a built in Hardware Security Module (hsm). Each phone will be able to maintain it's own inventory and records, making requests for transactions to the paired TigoCTM Server or Desktop, and will serve as a sandboxed AI. -->
           <div class="event-time">Comming August 1, 2019</div>
           <div class="expected">Exp. ship date November 1, 2019</div>
+          <a href="{{ url_for('identify') }}" class="btn">Back it</a>
         </div>
       </div>
 
@@ -178,10 +208,11 @@ The TigoCTM Smart Phone will come with GuldOS light pre-installed, requiring a T
             <a href="https://guld.io/docs/guldFS-Specification.pdf" target="_blank">guld filesystem</a> allows you to securely share data between your different TigoCTM devices. You can use this
             as your secure, private cloud, or to interact with other members of the guld network.</p>
 
-          <p>Each TigoCTM device will ship with some guld tokens so it can register on the global, decentralized guld network.
+          <div>Each TigoCTM device will ship with some guld tokens so it can register on the global, decentralized guld network.
             Through the guld network, any file or directory can be shared and trustlessly governed by a user defined consensus
             group. (see the
-            <a href="https://guld.io/docs/guld-whitepaper.pdf" target="_blank">guld consensus whitepaper</a>)</p>
+            <a href="https://guld.io/docs/guld-whitepaper.pdf" target="_blank">guld consensus whitepaper</a>)
+          </div>
         </div>
       </div>
     </div>
@@ -290,9 +321,11 @@ The TigoCTM Smart Phone will come with GuldOS light pre-installed, requiring a T
             <address>
               <ul class="list-unstyled">
                 <li>
-                  TigoCTM Security Layers <span>(coming soon)</span>
+                  TigoCTM Security Layers
+                  <span>(coming soon)</span>
                 </li>
-                <li>TigoCTM whitepaper <span>(coming soon)</span>
+                <li>TigoCTM whitepaper
+                  <span>(coming soon)</span>
 
                 </li>
                 <li>
