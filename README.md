@@ -11,6 +11,7 @@
 Open your favorite Terminal and run these commands:
 
 ```sh
+$ export FLASK_APP=app.py
 $ flask run
 ```
 
