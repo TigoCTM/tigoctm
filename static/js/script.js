@@ -23,11 +23,12 @@ jQuery(function ($) {
 
             // Desktop
             $('#preorder .target span').text("$" + raised.toLocaleString());
-            $('#preorder .expected span').text(desktopProgress.toFixed(0) + "%");
             if (desktopProgress >= 100) {
                 $('#preorder .progress .progress-bar').width("100%");
+                $('#preorder .expected span').text("100%");
             } else {
                 $('#preorder .progress .progress-bar').width(desktopProgress + "%");
+                $('#preorder .expected span').text(desktopProgress.toFixed(0) + "%");
             }
 
             // Server
@@ -38,7 +39,5 @@ jQuery(function ($) {
                 $('#section-next .progress .progress-bar').width(serverProgress + "%");
             }
         });
-
     })();
-
 }); // JQuery end
