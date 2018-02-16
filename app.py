@@ -27,7 +27,7 @@ def tigoRender(path, kwargs=None):
         grep = subprocess.check_output([
             'grep',
             '-r',
-            search, '%sledger/prices/*.db' % TIGO_HOME
+            search, '%sledger/prices/' % TIGO_HOME
         ])
         if (grep and len(grep) > 1):
             xgc = Decimal(re.search('XCM[ ]*\$[ 0-9.]*', grep).group(0).replace('XCM', '').replace('$', '').replace(' ', ''))
