@@ -114,6 +114,7 @@ b {
 
 .header .container {
     margin: 14rem auto;
+    padding: 0;
 }
 
 #xcm_logo {
@@ -121,7 +122,7 @@ b {
     font-size: 8rem;
     font-weight: bolder;
     position: relative;
-    line-height: 6rem;
+    line-height: 6.4rem;
     margin-top: 0.6rem;
 }
 
@@ -160,6 +161,7 @@ b {
 .header .now {
     color: #b8b8b8;
     font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .header .btn, .header .btn:visited {
