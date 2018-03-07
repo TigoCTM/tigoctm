@@ -50,7 +50,8 @@ def index():
 
 @app.route('/id/')
 def identify():
-    return tigoRender('identify.html')
+    return redirect("https://forkdelta.github.io/#!/trade/XCM-ETH", code=302)
+#    return tigoRender('identify.html')
 
 def getAssets(commodity, address):
     ledgerBals = subprocess.check_output([
@@ -137,73 +138,76 @@ def mkdirp(path):
 
 @app.route('/id/<username>')
 def identity(username=None):
-    if (username):
-        depAddys = getAddresses(username)
-        withAddys = getAddresses(username, 'withdraw')
-        return tigoRender('identity.html', {'username':username, 'depositAddresses':depAddys, 'withdrawAddresses':withAddys})
-    return tigoRender('identify.html')
+    return redirect("https://forkdelta.github.io/#!/trade/XCM-ETH", code=302)
+#    if (username):
+#        depAddys = getAddresses(username)
+#        withAddys = getAddresses(username, 'withdraw')
+#        return tigoRender('identity.html', {'username':username, 'depositAddresses':depAddys, 'withdrawAddresses':withAddys})
+#    return tigoRender('identify.html')
 
 @app.route('/id/<username>/<faddress>')
 def register(username, faddress):
-    mkdirp('%speople/%s/' % (TIGO_HOME, username))
-    print(username)
-    print(faddress)
-    if re.match('-----BEGIN PGP PUBLIC KEY BLOCK-----[a-zA-Z1-9 :]*-----END PGP PUBLIC KEY BLOCK-----', faddress):
-        imp = subprocess.Popen([
-            'gpg2',
-            '--import',
-        ], stdin=subprocess.PIPE)
-        if (imp == 0):
-            imp = subprocess.check_output([
-                'gpg2',
-                '--fingerprint',
-                '--with-colons'
-            ])
-            for line in imp.split('\n'):
-                if line.startsWith('fpr'):
-                    mkdirp('%skeys/pgp/%s/' % (TIGO_HOME, username))
-                    imp = subprocess.Popen([
-                        'gpg2',
-                        '--export',
-                        '-a',
-                        '>',
-                        '%skeys/pgp/%s/%s.asc' % (TIGO_HOME, username, re.search('\w{4,41}', line).group(0))
-                    ])
-    elif re.match('0x\w{10,40}', faddress):
-        if not os.path.exists('%sledger/XCM/%s/included.dat' % (TIGO_HOME, faddress)):
-            mkdirp('%sledger/XCM/%s/' % (TIGO_HOME, faddress))
-            ledger = open('%sledger/XCM/%s/included.dat' % (TIGO_HOME, faddress), 'w')
-            ledger.write(";%s:tigoctm" % username)
-            ledger.close()
-    return redirect(url_for('identity', username=username))
+    return redirect("https://forkdelta.github.io/#!/trade/XCM-ETH", code=302)
+#    mkdirp('%speople/%s/' % (TIGO_HOME, username))
+#    print(username)
+#    print(faddress)
+#    if re.match('-----BEGIN PGP PUBLIC KEY BLOCK-----[a-zA-Z1-9 :]*-----END PGP PUBLIC KEY BLOCK-----', faddress):
+#        imp = subprocess.Popen([
+#            'gpg2',
+#            '--import',
+#        ], stdin=subprocess.PIPE)
+#        if (imp == 0):
+#            imp = subprocess.check_output([
+#                'gpg2',
+#                '--fingerprint',
+#                '--with-colons'
+#            ])
+#            for line in imp.split('\n'):
+#                if line.startsWith('fpr'):
+#                    mkdirp('%skeys/pgp/%s/' % (TIGO_HOME, username))
+#                    imp = subprocess.Popen([
+#                        'gpg2',
+#                        '--export',
+#                        '-a',
+#                        '>',
+#                        '%skeys/pgp/%s/%s.asc' % (TIGO_HOME, username, re.search('\w{4,41}', line).group(0))
+#                    ])
+#    elif re.match('0x\w{10,40}', faddress):
+#        if not os.path.exists('%sledger/XCM/%s/included.dat' % (TIGO_HOME, faddress)):
+#            mkdirp('%sledger/XCM/%s/' % (TIGO_HOME, faddress))
+#            ledger = open('%sledger/XCM/%s/included.dat' % (TIGO_HOME, faddress), 'w')
+#            ledger.write(";%s:tigoctm" % username)
+#            ledger.close()
+#    return redirect(url_for('identity', username=username))
 
 @app.route('/address/generate/<commodity>/<username>')
 def genaddress(commodity, username):
-    addys = getAddresses(username)
-    if commodity not in addys or len(addys[commodity]) < 3:
-        imp = subprocess.check_output([
-            'find',
-            '%sledger/%s/' % (TIGO_HOME, commodity),
-            '-size',
-            '0',
-            '-name',
-            'included.dat'
-        ]).split('included.dat')
-        chosen = random.randint(0, len(imp) - 1)
-        imp[chosen] = imp[chosen].replace('%sledger/%s' % (TIGO_HOME, commodity), '')
-        found = re.search('[^/]\w*[^/]', imp[chosen]).group(0)
-        f = open('%sledger/%s/%s/included.dat' % (TIGO_HOME, commodity, found), 'w')
-        f.write(';tigoctm:%s' % username)
-        f.close()
-    return redirect(url_for('identity', username=username))
+    return redirect("https://forkdelta.github.io/#!/trade/XCM-ETH", code=302)
+#    addys = getAddresses(username)
+#    if commodity not in addys or len(addys[commodity]) < 3:
+#        imp = subprocess.check_output([
+#            'find',
+#            '%sledger/%s/' % (TIGO_HOME, commodity),
+#            '-size',
+#            '0',
+#            '-name',
+#            'included.dat'
+#        ]).split('included.dat')
+#        chosen = random.randint(0, len(imp) - 1)
+#        imp[chosen] = imp[chosen].replace('%sledger/%s' % (TIGO_HOME, commodity), '')
+#        found = re.search('[^/]\w*[^/]', imp[chosen]).group(0)
+#        f = open('%sledger/%s/%s/included.dat' % (TIGO_HOME, commodity, found), 'w')
+#        f.write(';tigoctm:%s' % username)
+#        f.close()
+#    return redirect(url_for('identity', username=username))
 
 @app.route('/price/<commodity>')
 def price(commodity):
     return tigoRender('price.html')
 
-@app.route('/address/<address>')
-def address(address):
-    return tigoRender('address.html', {'address': address})
+#@app.route('/address/<address>')
+#def address(address):
+#    return tigoRender('address.html', {'address': address})
 
 if __name__ == '__main__':
     app.run()

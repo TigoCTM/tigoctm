@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="cryptocurrency,crypto,digitalcurrency,bitcoin,ethereum,dash,guld,xcm,tigoctm,ctm,machine,computer,atm,teller,manufacturer,security,privacy"
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="keywords" content="cryptocurrency,crypto,digitalcurrency,bitcoin,ethereum,dash,guld,xcm,tigoctm,ctm,machine,computer,atm,teller,manufacturer,security,privacy,secure,secure computing,IBM partner,power9,desktop"
   />
   <title>TigoCTM Crypto Machines</title>
   <link rel="icon" href="{{ url_for('static', filename='img/tigoctm.ico') }}" type="image/x-icon" />
@@ -25,6 +26,26 @@
 </head>
 
 <body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="buyModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/GuTP7mE9cD4?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <nav class="navbar sticky-top navbar-expand navbar-light">
     <a class="navbar-brand red" href="{{ url_for('index') }}">
       <img id="isotipo" src="{{ url_for('static', filename='img/isotipo.svg') }}" class="img-responsive" alt="TigoCTM">
@@ -46,25 +67,33 @@
   <header class="header text-center">
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
-          <a href="{{ url_for('identify') }}">
+        <div class="col-lg-5">
+          <a id="xcm_main" data-toggle="modal" data-target="#buyModal">
+            <div class="now">Available now.</div>
             <div id="xcm_logo">
               <div class="back">XCM</div>
               <div class="front">XCM</div>
             </div>
-            <div class="now">Available now.</div>
+            <div id="youtube_buy">
+              <i class="fab fa-youtube"></i>
+              <span>See how to buy.</span>
+            </div>
           </a>
         </div>
-        <div id="xcm_description" class="col-md-7 text-justify">
-          <div>
+        <div id="xcm_description" class="col-lg-7 text-center">
+          <div class="text-justify">
             X Coin Machines (XCM) are gift certificate tokens for TigoCTM. Each XCM is redeemable for $10 worth of hardware from TigoCTM
             at up to 50% off the retail price. ICO proceeds will go to funding the production of the first line of TigoCTM's
             products.
           </div>
           <div>
-            <ul>
-              <li>Contract Address <a href="https://etherscan.io/address/0xb9f0b7e1d518f0e213441a804fed84c2858c5d88" target="_blank" style="color: grey">0xb9f0b7e1d518f0e213441a804fed84c2858c5d88</a></li>
-              <li>Trade on <a href="https://forkdelta.github.io/#!/trade/0xb9f0b7e1d518f0e213441a804fed84c2858c5d88-ETH" target="_blank" style="color: grey">ForkDelta</a></li>
+            <ul class="list-unstyled text-left">
+              <li>Contract Address
+                <a href="https://etherscan.io/address/0xb9f0b7e1d518f0e213441a804fed84c2858c5d88" target="_blank" style="color: grey">0xb9f0b7e1d518f0e213441a804fed84c2858c5d88</a>
+              </li>
+              <li>Trade on
+                <a href="https://forkdelta.github.io/#!/trade/0xb9f0b7e1d518f0e213441a804fed84c2858c5d88-ETH" target="_blank" style="color: grey">ForkDelta</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -80,7 +109,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-5 text-sm-center">
             <img class="product" src="{{ url_for('static', filename='img/theanos.png')}}" />
           </div>
           <div class="col-md-7">
@@ -90,8 +119,8 @@
                 <p class="expected">Expected ship date October 1</p>
               </h1>
               <div>
-                TigoCTM first generation Desktop Computer will come with GuldOS pre-installed, including full Bitcoin and Dash nodes. Files
-                will be encrypted with PGP, using a built in Hardware Security Module (hsm).
+                TigoCTM first generation Desktop Computer will come with GuldOS pre-installed, including full Bitcoin, Etherium and Dash
+                nodes. Files will be encrypted with PGP, using a built in Hardware Security Module (hsm).
               </div>
               <!--
             <form id="contactForm" class="subscribe-form form-inline" action="mailto:info@tigoctm.com?subject=Theanos Pre-order" method="POST"
@@ -109,8 +138,11 @@
                   <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0"
                     aria-valuemax="100" style="width: 100%"></div>
                 </div>
-                <p class="expected"><span>200%</span> of $500.000 goal</p>
+                <p class="expected">
+                  <span>200%</span> of $500.000 goal</p>
+                {#
                 <a href="{{ url_for('identify') }}" class="btn btn-secondary">Back it</a>
+                #}
               </div>
             </div>
           </div>
@@ -122,12 +154,14 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-lg-9 text-justify">
-          <h2>Crowdfund Server
+          <h2>Crowdfund
+            <b>Pythagoras</b> Server
             <p class="expected">Expected ship date October 1</p>
           </h2>
-          TigoCTM first generation Servers will come with GuldOS pre-installed, including full Bitcoin and Dash nodes. Files will be
-          encrypted with PGP, using a built in Hardware Security Module (hsm). Each server will be able to serve as a node
-          on the guld network (a special gitolite server), as well serving as commercial-grade bitcoin and dash node.
+          TigoCTM first generation Servers will come with GuldOS pre-installed, including full Bitcoin, Etherium and Dash nodes. Files
+          will be encrypted with PGP, using a built in Hardware Security Module (hsm). Each server will be able to serve
+          as a node on the guld network (a special gitolite server), as well serving as commercial-grade bitcoin and dash
+          node.
           <div class="exclusive">
             Exclusively using XCM tokens.
           </div>
@@ -154,7 +188,9 @@
           </div>
         </div>
         <div class="col-md-4 col-lg-3 text-center">
+          {#
           <a href="{{ url_for('identify') }}" class="btn">Back it</a>
+          #}
         </div>
       </div>
 
@@ -169,28 +205,36 @@
           <!-- Pre-order TigoCTM Laptops from the first generation exclusively using XCM tokens.
 The TigoCTM Laptop Computer will come with GuldOS pre-installed, including full Bitcoin and Dash nodes. Files will be encrypted with PGP, using a built in Hardware Security Module (hsm). -->
           <div class="expected">Exp. ship date February 1, 2019</div>
+          {#
           <a href="{{ url_for('identify') }}" class="btn">Back it</a>
+          #}
         </div>
         <div class="col-md-3">
           <h5>Tablet</h5>
           <!-- Pre-order TigoCTM Laptops from the first generation exclusively using XCM tokens.
 The TigoCTM Laptop Computer will come with GuldOS pre-installed, including full Bitcoin and Dash nodes. Files will be encrypted with PGP, using a built in Hardware Security Module (hsm). -->
           <div class="expected">Exp. ship date May 1, 2019</div>
+          {#
           <a href="{{ url_for('identify') }}" class="btn">Back it</a>
+          #}
         </div>
         <div class="col-md-3">
           <h5>Crypto Teller Machine</h5>
           <!-- Pre-order TigoCTM Crypto Teller Machines from the first generation exclusively using XCM tokens.
 The TigoCTM Crypto Teller Machine will come with GuldOS light pre-installed, requiring a TigoCTM Server to pair with. Files will be encrypted with PGP, using a built in Hardware Security Module (hsm). Each CTM will be able to maintain it's own inventory and records, making requests for transactions to the paired TigoCTM Server. -->
           <div class="expected">Exp. ship date August 1, 2019</div>
+          {#
           <a href="{{ url_for('identify') }}" class="btn">Back it</a>
+          #}
         </div>
         <div class="col-md-3">
           <h5>Smartphone</h5>
           <!-- Pre-order TigoCTM Smart Phones from the first generation exclusively using XCM tokens.
 The TigoCTM Smart Phone will come with GuldOS light pre-installed, requiring a TigoCTM Server or desktop to pair with for full functionality. Files will be encrypted with PGP, using a built in Hardware Security Module (hsm). Each phone will be able to maintain it's own inventory and records, making requests for transactions to the paired TigoCTM Server or Desktop, and will serve as a sandboxed AI. -->
           <div class="expected">Exp. ship date November 1, 2019</div>
+          {#
           <a href="{{ url_for('identify') }}" class="btn">Back it</a>
+          #}
         </div>
       </div>
 
@@ -246,6 +290,9 @@ The TigoCTM Smart Phone will come with GuldOS light pre-installed, requiring a T
       </div>
 
       <div class="row">
+        <div class="col-sm-6 col-md-3 text-center d-block d-sm-none">
+          <img class="member" src="{{ url_for('static', filename='img/team/judithk.jpeg') }}" class="img-responsive" alt="Image">
+        </div>
         <div class="col-sm-6 col-md-9">
           <h3>Judith Katzman
             <small class="title">COO & Co-founder</small>
@@ -255,7 +302,7 @@ The TigoCTM Smart Phone will come with GuldOS light pre-installed, requiring a T
             In addition, she has over 20 years of IT experience. Judith has an MA in Computer Science from CUNY Queens.
           </p>
         </div>
-        <div class="col-sm-6 col-md-3 text-center">
+        <div class="col-sm-6 col-md-3 text-center d-none d-sm-block">
           <img class="member" src="{{ url_for('static', filename='img/team/judithk.jpeg') }}" class="img-responsive" alt="Image">
         </div>
       </div>
@@ -277,15 +324,22 @@ The TigoCTM Smart Phone will come with GuldOS light pre-installed, requiring a T
       </div>
 
       <div class="row">
+        <div class="col-sm-6 col-md-3 text-center d-block d-sm-none">
+          <img class="member" src="{{ url_for('static', filename='img/team/isysd.png') }}" class="img-responsive" alt="Image">
+        </div>
         <div class="col-sm-6 col-md-9">
           <h3>Ira Miller
             <small class="title">Technical Advisor</small>
           </h3>
           <p>
-            Ira Miller is the Founder of <a href="https://guld.io" target="_blank">Guld</a>. Advisor to <a href="https://tigoctm.com" target="_blank">TigoCTM</a>, Dash, Bitt and more fantastic projects. Ira has founded many technology startups, lately focused on the blockchain sector. In 2012, Ira co-founded global payment processor <a href="https://coinapult.com" target="_blank">Coinapult</a>, selling the company in 2015 to pursue open source collaborative projects through the Guld network.
+            Ira Miller is the Founder of
+            <a href="https://guld.io" target="_blank">Guld</a>. Advisor to
+            <a href="https://tigoctm.com" target="_blank">TigoCTM</a>, Dash, Bitt and more fantastic projects. Ira has founded many technology startups, lately focused
+            on the blockchain sector. In 2012, Ira co-founded global payment processor
+            <a href="https://coinapult.com" target="_blank">Coinapult</a>, selling the company in 2015 to pursue open source collaborative projects through the Guld network.
           </p>
         </div>
-        <div class="col-sm-6 col-md-3 text-center">
+        <div class="col-sm-6 col-md-3 text-center d-none d-sm-block">
           <img class="member" src="{{ url_for('static', filename='img/team/isysd.png') }}" class="img-responsive" alt="Image">
         </div>
       </div>
@@ -294,6 +348,22 @@ The TigoCTM Smart Phone will come with GuldOS light pre-installed, requiring a T
     <!-- /.container -->
   </section>
   <!-- .team -->
+
+  <section id="section-openpower" class="section-wrapper">
+    <div class="container">
+      <a href="https://openpowerfoundation.org" target="_blank">
+        <div class="row">
+          <div class="col-md-4 col-lg-3 text-center">
+            <img src="{{ url_for('static', filename='img/openpower.png') }}" class="img-responsive isotipo" alt="Open Power">
+          </div>
+          <div class="col-md-8 col-lg-9 text-justify">
+            TigoCTM is pleased to be a member of the OpenPower foundation, which advocates customization of the open sourced IBM POWER
+            CPU processors and system.
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
 
   <footer class="footer" role="contentinfo">
     <div class="container">
@@ -307,12 +377,14 @@ The TigoCTM Smart Phone will come with GuldOS light pre-installed, requiring a T
                 <a href="mailto:info@tigoctm.com?subject=Contact Form">Open mail client</a>
               </li>
             </ul>
+            {#
             <h4>Buy XCM</h4>
             <ul class="list-unstyled">
               <li>
                 <a href="{{ url_for('identify') }}">Go to cart</a>
               </li>
             </ul>
+            #}
           </div>
         </div>
         <div class="col-md-4 col-sm-4">
@@ -354,8 +426,12 @@ The TigoCTM Smart Phone will come with GuldOS light pre-installed, requiring a T
     </div>
   </footer>
   <script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
   <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </body>
 
 </html>
