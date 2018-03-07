@@ -48,8 +48,9 @@ def tigoRender(path, kwargs=None):
 def index():
     return tigoRender('index.html')
 
-#@app.route('/id/')
-#def identify():
+@app.route('/id/')
+def identify():
+    return redirect("https://forkdelta.github.io/#!/trade/XCM-ETH", code=302)
 #    return tigoRender('identify.html')
 
 def getAssets(commodity, address):
@@ -135,16 +136,18 @@ def mkdirp(path):
         else:
             raise
 
-#@app.route('/id/<username>')
-#def identity(username=None):
+@app.route('/id/<username>')
+def identity(username=None):
+    return redirect("https://forkdelta.github.io/#!/trade/XCM-ETH", code=302)
 #    if (username):
 #        depAddys = getAddresses(username)
 #        withAddys = getAddresses(username, 'withdraw')
 #        return tigoRender('identity.html', {'username':username, 'depositAddresses':depAddys, 'withdrawAddresses':withAddys})
 #    return tigoRender('identify.html')
 
-#@app.route('/id/<username>/<faddress>')
-#def register(username, faddress):
+@app.route('/id/<username>/<faddress>')
+def register(username, faddress):
+    return redirect("https://forkdelta.github.io/#!/trade/XCM-ETH", code=302)
 #    mkdirp('%speople/%s/' % (TIGO_HOME, username))
 #    print(username)
 #    print(faddress)
@@ -177,8 +180,9 @@ def mkdirp(path):
 #            ledger.close()
 #    return redirect(url_for('identity', username=username))
 
-#@app.route('/address/generate/<commodity>/<username>')
-#def genaddress(commodity, username):
+@app.route('/address/generate/<commodity>/<username>')
+def genaddress(commodity, username):
+    return redirect("https://forkdelta.github.io/#!/trade/XCM-ETH", code=302)
 #    addys = getAddresses(username)
 #    if commodity not in addys or len(addys[commodity]) < 3:
 #        imp = subprocess.check_output([
