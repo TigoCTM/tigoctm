@@ -13,6 +13,8 @@ jQuery(function ($) {
         var daysLeft = Math.floor(e_daysLeft);
 
         $('.calendar .left').text(daysLeft);
+        // Youtube Popup 
+        $('.yt').grtyoutube();
     })();
 
     (function () {
