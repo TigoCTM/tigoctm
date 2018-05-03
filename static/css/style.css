@@ -643,6 +643,26 @@ a.btn-secondary {
     padding: 5rem 0;
 }
 
+.section-title h1 {
+    margin: 0 0 3rem 0;
+    text-align: center;
+    font-size: 2.6rem;
+    line-height: 1.2em;
+    font-weight: 300;
+    color: #fff;
+}
+
+.dark-bg {
+   	background: #1f262b;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+#section-network img {
+    height: 3rem;
+    margin: 3rem;
+}
+
 .grtyoutube-popup {
 	position:fixed;
 	top:0;
@@ -691,6 +711,7 @@ a.btn-secondary {
 .grtyoutube-light-theme .grtyoutube-popup-close {background: url('../img/icon-close-black.png') no-repeat;}
 
 @media (max-width: 768px) {
+	#section-network img {margin: 2rem;}	
     .header {
         padding: 0 3rem;
     }
